@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class InputActionAdapter : MonoBehaviour
 {
@@ -38,7 +39,7 @@ public class InputActionAdapter : MonoBehaviour
     {
         if (_input.Player.Hold.inProgress)
         {
-            Holded?.Invoke(_input.Player.Hold.ReadValue<Vector2>());
+            OnHold();
         }
 
         if (_input.Player.Move.inProgress)
@@ -58,5 +59,10 @@ public class InputActionAdapter : MonoBehaviour
     private void OnTouch()
     {
         Touched?.Invoke(_input.Player.TouchPosition.ReadValue <Vector2>());
+    }
+
+    private void OnHold()
+    {
+        Holded?.Invoke(_input.Player.Hold.ReadValue<Vector2>());
     }
 }
