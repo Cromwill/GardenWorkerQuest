@@ -1,5 +1,5 @@
 {
-    "name": "InputAction",
+    "name": "PlayerAction",
     "maps": [
         {
             "name": "Player",
@@ -11,7 +11,7 @@
                     "id": "6158760c-cbfe-4be8-98c4-17dcb9019f2d",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Hold",
                     "initialStateCheck": true
                 },
                 {
@@ -37,15 +37,6 @@
                     "type": "PassThrough",
                     "id": "b6ec6502-8c86-489b-aafe-c20323290f41",
                     "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "6d562c64-9b3c-4fa9-ba40-080d182c5ba1",
-                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -93,17 +84,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Hold",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5ab1375b-c0f6-4dea-ab0e-ceee468870d5",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

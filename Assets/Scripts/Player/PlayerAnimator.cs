@@ -2,18 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
 public class PlayerAnimator : MonoBehaviour
 {
     [SerializeField] private InputActionAdapter _inputHandler;
+    [SerializeField] private Animator _animator;
     
-    private Animator _animator;
-
-    private void Awake()
-    {
-        _animator = GetComponent<Animator>();
-    }
-
     private void OnEnable()
     {
         _inputHandler.MoveCalled += PlayWalkingAnimation;

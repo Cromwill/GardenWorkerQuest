@@ -30,7 +30,6 @@ public class InputActionAdapter : MonoBehaviour
 
     private void Start()
     {
-        _input.Player.Move.performed += ctx => OnMove();
         _input.Player.Move.canceled += ctx => OnMoveCanceled();
         _input.Player.Touch.started += ctx => OnTouch();
     }
@@ -41,6 +40,9 @@ public class InputActionAdapter : MonoBehaviour
         {
             Holded?.Invoke(_input.Player.Hold.ReadValue<Vector2>());
         }
+
+        if (_input.Player.Move.inProgress)
+            OnMove();
     }
 
     private void OnMove()

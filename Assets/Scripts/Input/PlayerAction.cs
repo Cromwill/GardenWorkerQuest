@@ -33,7 +33,7 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                     ""id"": ""6158760c-cbfe-4be8-98c4-17dcb9019f2d"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Hold"",
                     ""initialStateCheck"": true
                 },
                 {
@@ -59,15 +59,6 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                     ""type"": ""PassThrough"",
                     ""id"": ""b6ec6502-8c86-489b-aafe-c20323290f41"",
                     ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""New action"",
-                    ""type"": ""Button"",
-                    ""id"": ""6d562c64-9b3c-4fa9-ba40-080d182c5ba1"",
-                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -117,17 +108,6 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                     ""action"": ""Hold"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5ab1375b-c0f6-4dea-ab0e-ceee468870d5"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""New action"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -140,7 +120,6 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
         m_Player_Touch = m_Player.FindAction("Touch", throwIfNotFound: true);
         m_Player_TouchPosition = m_Player.FindAction("TouchPosition", throwIfNotFound: true);
         m_Player_Hold = m_Player.FindAction("Hold", throwIfNotFound: true);
-        m_Player_Newaction = m_Player.FindAction("New action", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -204,7 +183,6 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Touch;
     private readonly InputAction m_Player_TouchPosition;
     private readonly InputAction m_Player_Hold;
-    private readonly InputAction m_Player_Newaction;
     public struct PlayerActions
     {
         private @PlayerAction m_Wrapper;
@@ -213,7 +191,6 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
         public InputAction @Touch => m_Wrapper.m_Player_Touch;
         public InputAction @TouchPosition => m_Wrapper.m_Player_TouchPosition;
         public InputAction @Hold => m_Wrapper.m_Player_Hold;
-        public InputAction @Newaction => m_Wrapper.m_Player_Newaction;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -235,9 +212,6 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                 @Hold.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHold;
                 @Hold.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHold;
                 @Hold.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHold;
-                @Newaction.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNewaction;
-                @Newaction.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNewaction;
-                @Newaction.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNewaction;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -254,9 +228,6 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
                 @Hold.started += instance.OnHold;
                 @Hold.performed += instance.OnHold;
                 @Hold.canceled += instance.OnHold;
-                @Newaction.started += instance.OnNewaction;
-                @Newaction.performed += instance.OnNewaction;
-                @Newaction.canceled += instance.OnNewaction;
             }
         }
     }
@@ -267,6 +238,5 @@ public partial class @PlayerAction : IInputActionCollection2, IDisposable
         void OnTouch(InputAction.CallbackContext context);
         void OnTouchPosition(InputAction.CallbackContext context);
         void OnHold(InputAction.CallbackContext context);
-        void OnNewaction(InputAction.CallbackContext context);
     }
 }
