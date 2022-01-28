@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class PlayerAnimator : MonoBehaviour
 {
-    [SerializeField] private InputHandler _inputHandler;
+    [SerializeField] private InputActionAdapter _inputHandler;
     
     private Animator _animator;
 
@@ -17,16 +17,16 @@ public class PlayerAnimator : MonoBehaviour
     private void OnEnable()
     {
         _inputHandler.MoveCalled += PlayWalkingAnimation;
-        _inputHandler.Stoped += PlayerIdleAnimation;
+        _inputHandler.MoveCanceled += PlayerIdleAnimation;
     }
 
     private void OnDisable()
     {
         _inputHandler.MoveCalled -= PlayWalkingAnimation;
-        _inputHandler.Stoped -= PlayerIdleAnimation;
+        _inputHandler.MoveCanceled -= PlayerIdleAnimation;
     }
 
-    private void PlayWalkingAnimation(Vector3 a)
+    private void PlayWalkingAnimation(Vector3 position)
     {
         _animator.SetFloat(PlayerAnimatorController.Param.Speed, 2);
     }

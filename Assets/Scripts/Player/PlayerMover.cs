@@ -5,10 +5,9 @@ using UnityEngine;
 
 public class PlayerMover : MonoBehaviour
 {  
-    [SerializeField] private InputHandler _handler;
+    [SerializeField] private InputActionAdapter _handler;
     
     private float _speed = 10;
-    private Vector3 _direction;
 
     private void OnEnable()
     {
@@ -20,8 +19,10 @@ public class PlayerMover : MonoBehaviour
         _handler.MoveCalled -= Move;
     }
 
-    private void Move(Vector3 direction)
+    private void Move(Vector3 StickDirection)
     {
+        Vector3 direction = new Vector3(StickDirection.x, 0, StickDirection.y);
+
         transform.Translate(direction * _speed * Time.deltaTime, Space.World);
         Rotate(direction);
     }

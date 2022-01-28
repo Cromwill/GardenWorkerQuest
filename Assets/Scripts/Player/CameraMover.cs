@@ -12,7 +12,7 @@ public class CameraMover : MonoBehaviour
         transform.position = _player.transform.position + _offset;
     }
 
-    private void LateUpdate()
+    private void Update()
     {
         transform.position = _player.transform.position + _offset;
     }
