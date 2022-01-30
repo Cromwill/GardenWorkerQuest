@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class Breakable : Interactable
 {
-    private int _durability = 100;
-    private int _durabilityPerTap = 25;
+    [SerializeField] private int _durability;
 
     public event Action DurabilityEnded;
 
@@ -17,7 +16,7 @@ public class Breakable : Interactable
 
     private void LowDurability()
     {
-        _durability -= _durabilityPerTap;
+        _durability--;
 
         if (_durability <= 0)
         {

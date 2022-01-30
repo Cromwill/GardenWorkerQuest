@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,9 @@ using UnityEngine;
 public class RaycastHandler : MonoBehaviour
 {
     [SerializeField] private InputActionAdapter _inputHandler;
+
+    public event Action<Vector3> TouchedInteractable;
+    public event Action<Vector3> HoldedOnInteractable;
 
     private void OnEnable()
     {
@@ -32,11 +36,13 @@ public class RaycastHandler : MonoBehaviour
 
     private void OnTouch(Vector2 position)
     {
-
         Interactable interactable = TryGetInteractable(position);
 
         if (interactable != null)
+        {
             interactable.Interact();
+            TouchedInteractable?.Invoke(interactable.transform.position);
+        }
     }
 
     private void OnHold(Vector2 position)
@@ -44,6 +50,10 @@ public class RaycastHandler : MonoBehaviour
         Interactable interactable = TryGetInteractable(position);
 
         if (interactable != null)
+        {
             interactable.Interact(position);
+            HoldedOnInteractable?.Invoke(interactable.transform.position);
+        }
     }
+
 }
