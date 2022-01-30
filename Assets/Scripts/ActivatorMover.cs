@@ -7,6 +7,7 @@ using RayFire;
 public class ActivatorMover : MonoBehaviour
 {
     [SerializeField] private RaycastHandler _raycastHandler;
+    [SerializeField] private bool _moveOnHold;
 
     private RayfireActivator _activator;
 
@@ -17,12 +18,18 @@ public class ActivatorMover : MonoBehaviour
 
     private void OnEnable()
     {
-        _raycastHandler.TouchedInteractable += Move;
+        if (_moveOnHold)
+            _raycastHandler.HoldedOnInteractable += Move;
+        else
+            _raycastHandler.TouchedInteractable += Move;
     }
 
     private void OnDisable()
     {
-        _raycastHandler.TouchedInteractable -= Move;
+        if (_moveOnHold)
+            _raycastHandler.HoldedOnInteractable += Move;
+        else
+            _raycastHandler.TouchedInteractable += Move;
     }
 
     private void Move(Vector3 position)
