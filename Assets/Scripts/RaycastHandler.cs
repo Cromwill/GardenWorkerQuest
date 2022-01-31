@@ -6,7 +6,6 @@ using UnityEngine;
 public class RaycastHandler : MonoBehaviour
 {
     [SerializeField] private InputActionAdapter _inputHandler;
-    [SerializeField] private LayerMask _mask;
 
     public event Action<Vector3> TouchedInteractable;
     public event Action<Vector3> HoldedOnInteractable;
@@ -51,6 +50,7 @@ public class RaycastHandler : MonoBehaviour
 
         if (interactable != null)
         {
+            Debug.Log("asd");
             interactable.Interact(position);
             HoldedOnInteractable?.Invoke(hitInfo.point);
         }
