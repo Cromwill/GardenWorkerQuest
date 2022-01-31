@@ -6,6 +6,7 @@ using UnityEngine;
 public class RaycastHandler : MonoBehaviour
 {
     [SerializeField] private InputActionAdapter _inputHandler;
+    [SerializeField] private LayerMask _mask;
 
     public event Action<Vector3> TouchedInteractable;
     public event Action<Vector3> HoldedOnInteractable;
@@ -22,10 +23,9 @@ public class RaycastHandler : MonoBehaviour
         _inputHandler.Holded -= OnHold;
     }
 
-    private Interactable TryGetInteractable(Vector2 mousePosition)
+    private Interactable TryGetInteractable(Vector2 mousePosition, out RaycastHit hitInfo)
     {
         Ray ray = Camera.main.ScreenPointToRay(mousePosition);
-        RaycastHit hitInfo;
 
         if (Physics.Raycast(ray, out hitInfo))
             if (hitInfo.collider.TryGetComponent(out Interactable interactable))
@@ -36,7 +36,7 @@ public class RaycastHandler : MonoBehaviour
 
     private void OnTouch(Vector2 position)
     {
-        Interactable interactable = TryGetInteractable(position);
+        Interactable interactable = TryGetInteractable(position, out RaycastHit hitInfo);
 
         if (interactable != null)
         {
@@ -47,12 +47,12 @@ public class RaycastHandler : MonoBehaviour
 
     private void OnHold(Vector2 position)
     {
-        Interactable interactable = TryGetInteractable(position);
+        Interactable interactable = TryGetInteractable(position, out RaycastHit hitInfo);
 
         if (interactable != null)
         {
             interactable.Interact(position);
-            HoldedOnInteractable?.Invoke(interactable.transform.position);
+            HoldedOnInteractable?.Invoke(hitInfo.point);
         }
     }
 
