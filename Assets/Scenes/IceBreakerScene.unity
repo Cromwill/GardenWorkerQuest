@@ -1466,6 +1466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &99667794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,6 +1564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &116930767
 Mesh:
   m_ObjectHideFlags: 0
@@ -1824,6 +1826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &129791400 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 912511a4427e91d4a8d0519f6cc05eec, type: 3}
@@ -2487,6 +2490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &189018455
 Mesh:
   m_ObjectHideFlags: 0
@@ -2748,6 +2752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &213788729
 Mesh:
   m_ObjectHideFlags: 0
@@ -3337,6 +3342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &258093462
 GameObject:
   m_ObjectHideFlags: 0
@@ -3434,6 +3440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &286805260
 Mesh:
   m_ObjectHideFlags: 0
@@ -3859,6 +3866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &410966121
 Mesh:
   m_ObjectHideFlags: 0
@@ -4120,6 +4128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &429314230
 Mesh:
   m_ObjectHideFlags: 0
@@ -4556,6 +4565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &478764806
 GameObject:
   m_ObjectHideFlags: 0
@@ -4653,6 +4663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &498788199
 GameObject:
   m_ObjectHideFlags: 0
@@ -4750,6 +4761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &515104065
 GameObject:
   m_ObjectHideFlags: 0
@@ -4847,6 +4859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &541788892
 GameObject:
   m_ObjectHideFlags: 0
@@ -4944,6 +4957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &576756543
 Mesh:
   m_ObjectHideFlags: 0
@@ -6025,6 +6039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &731841151
 GameObject:
   m_ObjectHideFlags: 0
@@ -6122,6 +6137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &742970964
 GameObject:
   m_ObjectHideFlags: 0
@@ -6219,6 +6235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &754170998
 GameObject:
   m_ObjectHideFlags: 0
@@ -6316,6 +6333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &777082694
 Mesh:
   m_ObjectHideFlags: 0
@@ -6577,6 +6595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &793355787
 GameObject:
   m_ObjectHideFlags: 0
@@ -6674,6 +6693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &797982582
 GameObject:
   m_ObjectHideFlags: 0
@@ -6771,6 +6791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &849675263
 GameObject:
   m_ObjectHideFlags: 0
@@ -6868,6 +6889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &859763529
 Mesh:
   m_ObjectHideFlags: 0
@@ -7621,6 +7643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &967981804
 GameObject:
   m_ObjectHideFlags: 0
@@ -7718,6 +7741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &996190930
 Mesh:
   m_ObjectHideFlags: 0
@@ -8143,6 +8167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &1091479016
 GameObject:
   m_ObjectHideFlags: 0
@@ -8309,7 +8334,7 @@ MonoBehaviour:
     multiplier: 1
   fading:
     onDemolition: 0
-    onActivation: 1
+    onActivation: 0
     byOffset: 0
     lifeType: 4
     lifeTime: 1
@@ -8352,8 +8377,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091479016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 0.060000002, z: -0.5523}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.15, y: 0.060000002, z: 0.26}
+  m_LocalScale: {x: 1, y: 1, z: 0.76}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1536507307}
@@ -8563,6 +8588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &1123532803
 GameObject:
   m_ObjectHideFlags: 0
@@ -8660,6 +8686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &1160548271
 GameObject:
   m_ObjectHideFlags: 0
@@ -8757,6 +8784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &1178176312
 Mesh:
   m_ObjectHideFlags: 0
@@ -9087,6 +9115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &1224800678
 GameObject:
   m_ObjectHideFlags: 0
@@ -9184,6 +9213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &1295547731
 Mesh:
   m_ObjectHideFlags: 0
@@ -9609,6 +9639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &1346277982
 GameObject:
   m_ObjectHideFlags: 0
@@ -9706,6 +9737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &1350860870
 Mesh:
   m_ObjectHideFlags: 0
@@ -10131,6 +10163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &1487072476
 GameObject:
   m_ObjectHideFlags: 0
@@ -10228,6 +10261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &1496126214
 GameObject:
   m_ObjectHideFlags: 0
@@ -10325,6 +10359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &1499474710
 GameObject:
   m_ObjectHideFlags: 0
@@ -10422,6 +10457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &1534131767
 GameObject:
   m_ObjectHideFlags: 0
@@ -10519,6 +10555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &1536507306
 GameObject:
   m_ObjectHideFlags: 0
@@ -10616,6 +10653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &1568984752
 Mesh:
   m_ObjectHideFlags: 0
@@ -10877,6 +10915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &1598079364
 Mesh:
   m_ObjectHideFlags: 0
@@ -11560,6 +11599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &1661333901
 Mesh:
   m_ObjectHideFlags: 0
@@ -11821,6 +11861,102 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
+--- !u!1 &1682604295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1682604300}
+  - component: {fileID: 1682604299}
+  - component: {fileID: 1682604298}
+  - component: {fileID: 1682604297}
+  - component: {fileID: 1682604296}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1682604296
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682604295}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f096d3bf34659f3459a35049e930f475, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1682604297
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682604295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.95337844, y: 2.5444646, z: 4.094193}
+  m_Center: {x: -1.3639885, y: 0.568218, z: 0.041107416}
+--- !u!65 &1682604298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682604295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9893075, y: 2.346657, z: 4.3539596}
+  m_Center: {x: 1.7194595, y: 0.6733285, z: 0.051356077}
+--- !u!65 &1682604299
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682604295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4411008, y: 0.43628478, z: 3.5277112}
+  m_Center: {x: 0, y: 1.6408492, z: -0.6325716}
+--- !u!4 &1682604300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682604295}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -9.54}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1846299051}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1685131960
 Mesh:
   m_ObjectHideFlags: 0
@@ -12082,6 +12218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &1737766358
 Mesh:
   m_ObjectHideFlags: 0
@@ -12343,6 +12480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &1781512660
 GameObject:
   m_ObjectHideFlags: 0
@@ -12440,6 +12578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &1781804182
 GameObject:
   m_ObjectHideFlags: 0
@@ -12537,6 +12676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &1784176244
 Mesh:
   m_ObjectHideFlags: 0
@@ -12701,6 +12841,51 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1846299050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1846299051}
+  - component: {fileID: 1846299052}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1846299051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846299050}
+  m_LocalRotation: {x: 0.360408, y: -0, z: -0, w: 0.9327948}
+  m_LocalPosition: {x: 0.06, y: 0.124, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1682604300}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 42.251, y: 0, z: 0}
+--- !u!65 &1846299052
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846299050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5361617, y: 1.2116876, z: 3.6618454}
+  m_Center: {x: 0.09908259, y: -0.47245625, z: -0.648735}
 --- !u!43 &1852580451
 Mesh:
   m_ObjectHideFlags: 0
@@ -12962,6 +13147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1 &1929636155
 GameObject:
   m_ObjectHideFlags: 0
@@ -13143,6 +13329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &1968744003
 Mesh:
   m_ObjectHideFlags: 0
@@ -13568,6 +13755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &2095690396
 Mesh:
   m_ObjectHideFlags: 0
@@ -13829,6 +14017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!43 &2122143887
 Mesh:
   m_ObjectHideFlags: 0
@@ -14090,6 +14279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _durability: 1
+  _BreakeOnHold: 0
 --- !u!1001 &6333362962358439391
 PrefabInstance:
   m_ObjectHideFlags: 0
