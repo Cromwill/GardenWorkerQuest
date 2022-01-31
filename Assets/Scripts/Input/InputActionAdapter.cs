@@ -37,7 +37,7 @@ public class InputActionAdapter : MonoBehaviour
 
     private void Update()
     {
-        if (_input.Player.Hold.inProgress)
+        if (Input.GetMouseButton(0))
         {
             OnHold();
         }
