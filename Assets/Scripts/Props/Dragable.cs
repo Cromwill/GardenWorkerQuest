@@ -8,7 +8,8 @@ using UnityEngine.EventSystems;
 [RequireComponent(typeof(Rigidbody))]
 public class Dragable : Interactable
 {
-    [SerializeField] private LayerMask _mask;
+    [SerializeField] private LayerMask _flyZone;
+    [SerializeField] private float _flyHight = 1f;
 
     private Rigidbody _rigidbody;
 
@@ -22,8 +23,8 @@ public class Dragable : Interactable
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hitInfo;
 
-        if (Physics.Raycast(ray, out hitInfo, 100, _mask))
-                transform.position = new Vector3(hitInfo.point.x, 1f, hitInfo.point.z);
+        if (Physics.Raycast(ray, out hitInfo, 100, _flyZone))
+                transform.position = new Vector3(hitInfo.point.x, _flyHight, hitInfo.point.z);
     }
 
     private void OnMouseDown()
