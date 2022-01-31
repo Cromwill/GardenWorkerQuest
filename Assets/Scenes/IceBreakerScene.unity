@@ -14098,6 +14098,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6333362963665419475, guid: c161ef186b594a54a904127c2c9d2046, type: 3}
+      propertyPath: _moveOnHold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333362963665419475, guid: c161ef186b594a54a904127c2c9d2046, type: 3}
       propertyPath: _raycastHandler
       value: 
       objectReference: {fileID: 440802697}
