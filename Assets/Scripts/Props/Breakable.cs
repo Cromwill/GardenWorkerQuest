@@ -26,7 +26,7 @@ public class Breakable : Interactable
         }    
     }
 
-    private void LowDurability()
+    protected void LowDurability()
     {
         _durability--;
 
