@@ -4,21 +4,32 @@ using UnityEngine;
 
 public class WinScreen : MonoBehaviour
 {
-    [SerializeField] private Mask _mask;
+    [SerializeField] private Mask[] _masks;
     [SerializeField] private GameObject _panel;
+
+    private int _count;
 
     private void OnEnable()
     {
-        _mask.Completed += Show;
+        foreach (var mask in _masks)
+        {
+            mask.Completed += TryShow;
+        }
     }
 
     private void OnDisable()
     {
-        _mask.Completed -= Show;
+        foreach (var mask in _masks)
+        {
+            mask.Completed -= TryShow;
+        }
     }
 
-    private void Show()
+    private void TryShow()
     {
-        _panel.SetActive(true);
+        _count++;
+
+        if(_count>=_masks.Length)
+            _panel.SetActive(true);
     }
 }

@@ -92,7 +92,7 @@ public class Mask : MonoBehaviour
     private void CheckCompletition()
     {
         Color32[] colors = _texture.GetPixels32();
-
+        
         for (int i = 0; i < colors.Length; i++)
         {
             if (colors[i].a != 0)
