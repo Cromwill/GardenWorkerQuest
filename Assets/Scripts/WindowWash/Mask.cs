@@ -2,26 +2,27 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(RectTransform), typeof(Image))]
 public class Mask : MonoBehaviour
 {
     [SerializeField] private int _touchRadius;
-    [SerializeField] private Texture2D _texture;
-    [SerializeField] private RectTransform _rectTransform;
+    private Texture2D _texture;
+    private RectTransform _rectTransform;
 
     private int _width;
     private int _hight;
 
-    public Action OnTouch;
+    public UnityEvent OnTouch;
+    public Action Completed;
 
     private void Awake()
     {
         _rectTransform = GetComponent<RectTransform>();
         _width = (int)_rectTransform.sizeDelta.x;
         _hight = (int)_rectTransform.sizeDelta.y;
-
         Reset();
     }
 
@@ -43,7 +44,7 @@ public class Mask : MonoBehaviour
             {
                 xPos = xCenter + xOffset;
                 yPos = yCenter + yOffset;
-                hasChanged = TryErasePixel(xPos, yPos, ref tempColors);
+                hasChanged = TryErasePixel(xPos, yPos, ref tempColors) || hasChanged;
             }
         }
 
@@ -52,8 +53,8 @@ public class Mask : MonoBehaviour
             OnTouch?.Invoke();
             _texture.SetPixels32(tempColors);
             _texture.Apply(false);
+            CheckCompletition();
         }
-
     }
 
     private bool TryErasePixel(int xPos, int yPos, ref Color32[] tempColors)
@@ -62,7 +63,7 @@ public class Mask : MonoBehaviour
         {
             int index = yPos * _width + xPos;
 
-            if(tempColors[index].a > 0)
+            if(tempColors[index].a != 0)
             {
                 tempColors[index].a = 0;
                 return true;
@@ -86,5 +87,18 @@ public class Mask : MonoBehaviour
 
         GetComponent<Image>().material.mainTexture = _texture;
         _texture.Apply(false);
+    }
+
+    private void CheckCompletition()
+    {
+        Color32[] colors = _texture.GetPixels32();
+
+        for (int i = 0; i < colors.Length; i++)
+        {
+            if (colors[i].a != 0)
+                return;
+        }
+
+        Completed?.Invoke();
     }
 }
