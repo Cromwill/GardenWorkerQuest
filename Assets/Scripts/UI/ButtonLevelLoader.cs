@@ -4,15 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-public class LevelLoader : MonoBehaviour
+public class ButtonLevelLoader : MonoBehaviour
 {
     [SerializeField] private AssetReference _scene;
-
-    public Action LoadingLevel;
+    [SerializeField] private SceneLoader _sceneLoader;
 
     public void Load()
     {
-        LoadingLevel?.Invoke();
-        _scene.LoadSceneAsync();
+        _sceneLoader.Load(_scene);
     }
 }
