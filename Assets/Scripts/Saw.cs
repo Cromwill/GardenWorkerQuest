@@ -7,7 +7,9 @@ using RayFire;
 public class Saw : MonoBehaviour
 {
     [SerializeField] private InputActionAdapter _adapter;
+    [SerializeField] private float _delay;
 
+    private float _timeStamp;
     private Animator _animator;
 
     private void Start()
@@ -27,6 +29,15 @@ public class Saw : MonoBehaviour
 
     private void Cut()
     {
-        _animator.SetTrigger("Cut");
+        if (IsOnCooldown())
+        {
+            _timeStamp = Time.time + _delay;
+            _animator.SetTrigger("Cut");
+        }
+    }
+
+    private bool IsOnCooldown()
+    {
+        return _timeStamp <= Time.time;
     }
 }

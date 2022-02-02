@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.SceneManagement;
 
 public class QuestEnter : Interactable
 {
-    public override void Interact()
+    [SerializeField] private AssetReference _scene;
+
+    public string Name;
+
+    public override void OnInteract()
     {
-        Debug.Log("Sorry mario");
+        _scene.LoadSceneAsync();
     }
 }

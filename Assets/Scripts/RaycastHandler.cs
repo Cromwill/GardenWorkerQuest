@@ -50,7 +50,6 @@ public class RaycastHandler : MonoBehaviour
 
         if (interactable != null)
         {
-            Debug.Log("asd");
             interactable.Interact(position);
             HoldedOnInteractable?.Invoke(hitInfo.point);
         }
