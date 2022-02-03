@@ -11,7 +11,8 @@ public class RayFireInitializer : MonoBehaviour
 
     private void OnEnable()
     {
-        _breakable.DurabilityEnded += Init;
+        if(_breakable != null)
+            _breakable.DurabilityEnded += Init;
 
         if(_demolishOnDurabilityEnd)
             _breakable.DurabilityEnded += Demolish;
@@ -19,7 +20,8 @@ public class RayFireInitializer : MonoBehaviour
 
     private void OnDisable()
     {
-        _breakable.DurabilityEnded -= Init;
+        if (_breakable != null)
+            _breakable.DurabilityEnded -= Init;
 
         if (_demolishOnDurabilityEnd)
             _breakable.DurabilityEnded -= Demolish;
@@ -28,6 +30,11 @@ public class RayFireInitializer : MonoBehaviour
     private void Init()
     {
         _rayFireRidid.Initialize();
+    }
+
+    public void Init(RayfireRigid rigid)
+    {
+        rigid.Initialize();
     }
 
     private void Demolish()

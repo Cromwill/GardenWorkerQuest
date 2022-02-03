@@ -44,7 +44,6 @@ public class Cutable : Breakable
         timeStamp2 = Time.time;
 
         if (CanBeCuted())
-        if (CanBeCuted())
         {
             Cut();
         }
