@@ -16,6 +16,7 @@ public class Dragable : Interactable
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        Debug.Log(transform.eulerAngles.x);
     }
 
     private void OnMouseDrag()
@@ -30,6 +31,7 @@ public class Dragable : Interactable
     private void OnMouseDown()
     {
         _rigidbody.isKinematic = true;
+        transform.rotation = Quaternion.Euler(new Vector3(90, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z));
     }
 
     private void OnMouseUp()

@@ -5,7 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Conveyor : MonoBehaviour
 {
-    private float _speed = 0.5f;
+    [SerializeField] private float _speed;
+    [SerializeField] private bool _workAlways;
+    [SerializeField] private bool _reverseMoving;
+
     private Rigidbody _rigidbody;
 
     private void Start()
@@ -16,14 +19,23 @@ public class Conveyor : MonoBehaviour
     private void Move()
     {
         Vector3 calculatedPosition = _rigidbody.position;
-        _rigidbody.position += Vector3.left * _speed * Time.deltaTime;
+
+        if (_reverseMoving)
+            _rigidbody.position -= transform.forward * CalculatedSpeed();
+        else
+            _rigidbody.position += transform.forward * CalculatedSpeed();
+
         _rigidbody.MovePosition(calculatedPosition);
     }
 
+    private float CalculatedSpeed()
+    {
+        return _speed * Time.deltaTime;
+    }
 
     private void FixedUpdate()
     {
-        if(Input.GetMouseButton(0))
+        if(Input.GetMouseButton(0) || _workAlways)
             Move();
     }
 }

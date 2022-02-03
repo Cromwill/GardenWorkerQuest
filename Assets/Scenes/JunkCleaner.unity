@@ -896,6 +896,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35014c5c88956b843b70dd4504a98d46, type: 3}
+--- !u!1 &1080447033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3097986875885174703, guid: 395587de51edf0742bd6867bec7760e3, type: 3}
+  m_PrefabInstance: {fileID: 1085796410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1080447037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080447033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78fe9b234390024f9a88adbbac88a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tasks:
+  - {fileID: 1080447038}
+--- !u!114 &1080447038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080447033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18940f74f17e73242a76a4f3111a3a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shredders: []
 --- !u!1001 &1085796410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1029,6 +1061,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2534964839176971238, guid: 48a73ab7f60b1684384635baa10df39d, type: 3}
+--- !u!136 &1511823879
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511823874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.86549
+  m_Height: 2.4113243
+  m_Direction: 2
+  m_Center: {x: 0, y: -1.4549146e-16, z: 0.25511897}
+--- !u!114 &1511823883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511823874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec1bd2bf3f9a4ff46b793c75dcbac5e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shredArea: {fileID: 1511823879}
 --- !u!1001 &1518245442
 PrefabInstance:
   m_ObjectHideFlags: 0

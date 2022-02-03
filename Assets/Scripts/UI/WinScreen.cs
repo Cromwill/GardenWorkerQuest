@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WinScreen : MonoBehaviour
 {
-    [SerializeField] private Mask[] _masks;
+    [SerializeField] private Eraseable[] _masks;
     [SerializeField] private GameObject _panel;
 
     private int _count;

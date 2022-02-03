@@ -9,6 +9,12 @@ public class Breakable : Interactable
     [SerializeField] private bool _BreakeOnHold;
 
     public event Action DurabilityEnded;
+    public event Action Destroyed;
+
+    private void OnDisable()
+    {
+        Destroyed?.Invoke();
+    }
 
     public override void OnInteract()
     {

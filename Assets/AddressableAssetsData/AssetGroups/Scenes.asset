@@ -49,10 +49,6 @@ MonoBehaviour:
     m_Address: MainScene
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: d7f16c5405dc48d4382a06a289bda87a
-    m_Address: Pillar
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: e472dbb7a57c6634faef2458cb7cd59e
     m_Address: SculptureScene
     m_ReadOnly: 0

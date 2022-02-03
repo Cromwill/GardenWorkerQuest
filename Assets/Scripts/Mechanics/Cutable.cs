@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,8 @@ public class Cutable : Breakable
     private bool _isSecondAreaPassed;
     private float timeStamp1;
     private float timeStamp2;
+
+    public Action Cuted;
 
     private void OnEnable()
     {
@@ -39,7 +42,10 @@ public class Cutable : Breakable
         timeStamp2 = Time.time;
 
         if (isCuted())
+        {
+            Cuted?.Invoke();
             LowDurability();
+        }
     }
 
     private bool isCuted()
