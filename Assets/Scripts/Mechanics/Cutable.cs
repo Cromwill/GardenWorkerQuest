@@ -32,8 +32,10 @@ public class Cutable : Breakable
         _isFirstAreaPassed = true;
         timeStamp1 = Time.time;
 
-        if (isCuted())
-            LowDurability();
+        if (CanBeCuted())
+        {
+            Cut();
+        }
     }
 
     private void SeconAreaPassed()
@@ -41,15 +43,28 @@ public class Cutable : Breakable
         _isSecondAreaPassed = true;
         timeStamp2 = Time.time;
 
-        if (isCuted())
+        if (CanBeCuted())
+        if (CanBeCuted())
         {
-            Cuted?.Invoke();
-            LowDurability();
+            Cut();
         }
     }
 
-    private bool isCuted()
+    private bool CanBeCuted()
     {
         return _isFirstAreaPassed && _isSecondAreaPassed && (Mathf.Abs(timeStamp2 - timeStamp1)<0.1f);
+    }
+
+    private void Cut()
+    {
+        DisableAreas();
+        LowDurability();
+        Cuted?.Invoke();
+    }
+
+    private void DisableAreas()
+    {
+        _firstArea.GetComponent<Collider>().enabled = false;
+        _secondArea.GetComponent<Collider>().enabled = false;
     }
 }
