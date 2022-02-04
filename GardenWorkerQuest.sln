@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RayFireAssembly", "RayFireAssembly.csproj", "{38396EAC-0387-E0CC-DB05-D77851442AA8}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{A2195068-BA6E-B717-2F7B-CD054DB6A796}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualButtonsScripts", "VirtualButtonsScripts.csproj", "{88441770-A088-5DF7-132C-102397F61C55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{CB2D5804-81DA-DA3E-0467-FCC9CEE9F08C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RayFireEditorAssembly", "RayFireEditorAssembly.csproj", "{5FEEF522-E66E-4002-DCE7-87BA9E5AA6DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +17,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38396EAC-0387-E0CC-DB05-D77851442AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38396EAC-0387-E0CC-DB05-D77851442AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38396EAC-0387-E0CC-DB05-D77851442AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38396EAC-0387-E0CC-DB05-D77851442AA8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A2195068-BA6E-B717-2F7B-CD054DB6A796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A2195068-BA6E-B717-2F7B-CD054DB6A796}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2195068-BA6E-B717-2F7B-CD054DB6A796}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -19,6 +29,14 @@ Global
 		{88441770-A088-5DF7-132C-102397F61C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88441770-A088-5DF7-132C-102397F61C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88441770-A088-5DF7-132C-102397F61C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB2D5804-81DA-DA3E-0467-FCC9CEE9F08C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB2D5804-81DA-DA3E-0467-FCC9CEE9F08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB2D5804-81DA-DA3E-0467-FCC9CEE9F08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB2D5804-81DA-DA3E-0467-FCC9CEE9F08C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FEEF522-E66E-4002-DCE7-87BA9E5AA6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FEEF522-E66E-4002-DCE7-87BA9E5AA6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FEEF522-E66E-4002-DCE7-87BA9E5AA6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FEEF522-E66E-4002-DCE7-87BA9E5AA6DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

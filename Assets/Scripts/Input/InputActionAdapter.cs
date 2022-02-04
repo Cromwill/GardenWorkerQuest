@@ -11,6 +11,7 @@ public class InputActionAdapter : MonoBehaviour
     public event Action MoveCanceled;
     public event Action<Vector2> Touched;
     public event Action<Vector2> Holded;
+    public event Action Released;
 
     private PlayerAction _input;
 
@@ -33,11 +34,12 @@ public class InputActionAdapter : MonoBehaviour
     {
         _input.Player.Move.canceled += ctx => OnMoveCanceled();
         _input.Player.Touch.started += ctx => OnTouch();
+        _input.Player.Touch.canceled += ctx => OnRelease();
     }
 
     private void Update()
     {
-        if (_input.Player.Hold.inProgress)
+        if (Input.GetMouseButton(0))
         {
             OnHold();
         }
@@ -64,5 +66,10 @@ public class InputActionAdapter : MonoBehaviour
     private void OnHold()
     {
         Holded?.Invoke(_input.Player.Hold.ReadValue<Vector2>());
+    }
+
+    private void OnRelease()
+    {
+        Released?.Invoke();
     }
 }
