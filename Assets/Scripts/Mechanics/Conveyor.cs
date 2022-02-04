@@ -21,9 +21,9 @@ public class Conveyor : MonoBehaviour
         Vector3 calculatedPosition = _rigidbody.position;
 
         if (_reverseMoving)
-            _rigidbody.position -= transform.right * CalculatedSpeed();
+            _rigidbody.position -= transform.forward * CalculatedSpeed();
         else
-            _rigidbody.position += transform.right * CalculatedSpeed();
+            _rigidbody.position += transform.forward * CalculatedSpeed();
 
         _rigidbody.MovePosition(calculatedPosition);
     }
