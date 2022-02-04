@@ -10,13 +10,13 @@ public class Dragable : Interactable
 {
     [SerializeField] private LayerMask _flyZone;
     [SerializeField] private float _flyHight = 1f;
+    [SerializeField] private float _angle;
 
     private Rigidbody _rigidbody;
 
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
-        Debug.Log(transform.eulerAngles.x);
     }
 
     private void OnMouseDrag()
@@ -31,7 +31,7 @@ public class Dragable : Interactable
     private void OnMouseDown()
     {
         _rigidbody.isKinematic = true;
-        transform.rotation = Quaternion.Euler(new Vector3(90, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z));
+        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, _angle, transform.rotation.eulerAngles.z));
     }
 
     private void OnMouseUp()
