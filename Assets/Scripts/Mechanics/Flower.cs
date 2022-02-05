@@ -7,7 +7,7 @@ public class Flower : Interactable
     [SerializeField] private float _changeSpeed;
 
     private float _maxScaleMagnitude = 2f;
-    private float _delay = 0.2f;
+    private float _delay = 0.1f;
     private float _delayAmplitude = 0.1f;
 
     private void Awake()
