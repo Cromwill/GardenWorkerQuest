@@ -8090,6 +8090,7 @@ GameObject:
   - component: {fileID: 1624109369}
   - component: {fileID: 1624109368}
   - component: {fileID: 1624109374}
+  - component: {fileID: 1624109375}
   m_Layer: 0
   m_Name: Stream
   m_TagString: Untagged
@@ -8365,6 +8366,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &1624109375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624109366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561cf9d0539b5374d95f816d19dcb7bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _material: {fileID: 2100000, guid: 2624aa4313249874c8405919c06fd6cd, type: 2}
+  _ySpeed: 0
+  _xSpeed: -3
 --- !u!1001 &1630499445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9377,7 +9393,7 @@ GameObject:
   - component: {fileID: 1735037171}
   - component: {fileID: 1735037176}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: activator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
