@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,15 +11,29 @@ public class Flower : Interactable
     private float _delay = 0.1f;
     private float _delayAmplitude = 0.1f;
 
+    public event Action Growed;
+
     private void Awake()
     {
-        _delay += Random.Range(-_delayAmplitude, _delayAmplitude);
+        _delay += UnityEngine.Random.Range(-_delayAmplitude, _delayAmplitude);
     }
 
     public override void OnInteract()
     {
-        if(transform.localScale.magnitude<= _maxScaleMagnitude)
-            transform.localScale += new Vector3(_changeSpeed, _changeSpeed, _changeSpeed);
+        if (transform.localScale.magnitude <= _maxScaleMagnitude)
+        {
+            Enlarge();
+
+            if(transform.localScale.magnitude >= _maxScaleMagnitude)
+            {
+                Growed?.Invoke();
+            }
+        }
+    }
+
+    private void Enlarge()
+    {
+        transform.localScale = Vector3.MoveTowards(transform.localScale, Vector3.one * _maxScaleMagnitude, _changeSpeed * Time.deltaTime);
     }
 
     public void Grow()
@@ -30,7 +45,7 @@ public class Flower : Interactable
     {
         while(transform.localScale.magnitude < _maxScaleMagnitude)
         {
-            transform.localScale = Vector3.MoveTowards(transform.localScale, Vector3.one * _maxScaleMagnitude, _changeSpeed *Time.deltaTime);
+            Enlarge();
 
             yield return null;
         }

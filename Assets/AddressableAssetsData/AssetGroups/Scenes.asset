@@ -69,6 +69,10 @@ MonoBehaviour:
     m_Address: WindowWasher
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: ec7df3393c18f4c44a10f2496f41ee5b
+    m_Address: Assets/Scenes/WaterTheFlower.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 99e8b566354f2794faa517ea107cce23, type: 2}
   m_SchemaSet:

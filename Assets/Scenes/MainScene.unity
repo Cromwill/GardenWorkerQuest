@@ -966,6 +966,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exclamation point (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: Name
+      value: "\u041F\u043E\u043B\u0438\u0432\u0430\u0435\u043C \u0446\u0432\u0435\u0442\u044B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: _scene.m_AssetGUID
+      value: ec7df3393c18f4c44a10f2496f41ee5b
+      objectReference: {fileID: 0}
     - target: {fileID: 9046102646897414046, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1012,24 +1020,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
---- !u!1 &1035378700 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
-  m_PrefabInstance: {fileID: 1035378699}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1035378702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035378700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c9f4704c43f6334084925f62fa9bcb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _text: {fileID: 0}
 --- !u!1 &1036636411
 GameObject:
   m_ObjectHideFlags: 0

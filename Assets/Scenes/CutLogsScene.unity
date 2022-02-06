@@ -1744,6 +1744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: log
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ee89623ea98302840825be21faf8e01c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee89623ea98302840825be21faf8e01c, type: 3}
 --- !u!1001 &494096079
@@ -2115,7 +2119,7 @@ MonoBehaviour:
   damage: 0.01
   skin: 0
   cooldown: 0.4
-  mask: -1
+  mask: 256
   tagFilter: Untagged
   targets: []
   rigid: {fileID: 0}
