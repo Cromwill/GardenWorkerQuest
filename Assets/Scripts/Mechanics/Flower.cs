@@ -30,7 +30,7 @@ public class Flower : Interactable
     {
         while(transform.localScale.magnitude < _maxScaleMagnitude)
         {
-            transform.localScale = Vector3.MoveTowards(transform.localScale, Vector3.one * _maxScaleMagnitude, _changeSpeed);
+            transform.localScale = Vector3.MoveTowards(transform.localScale, Vector3.one * _maxScaleMagnitude, _changeSpeed *Time.deltaTime);
 
             yield return null;
         }

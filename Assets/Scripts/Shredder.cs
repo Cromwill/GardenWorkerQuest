@@ -11,8 +11,10 @@ public class Shredder : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.TryGetComponent(out Dragable _dragable))
+        if(other.TryGetComponent(out Dragable dragable))
         {
+            dragable.enabled = false;
+
             DragableRecieved?.Invoke();
         }
     }
