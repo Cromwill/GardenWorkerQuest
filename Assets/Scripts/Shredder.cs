@@ -13,9 +13,9 @@ public class Shredder : MonoBehaviour
     {
         if(other.TryGetComponent(out Dragable dragable))
         {
-            dragable.enabled = false;
-
             DragableRecieved?.Invoke();
+
+            dragable.enabled = false;
         }
     }
 }

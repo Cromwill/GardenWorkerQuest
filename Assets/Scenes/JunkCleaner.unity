@@ -401,6 +401,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6179014172309339334, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -53.494995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179014172309339334, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.13672
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
 --- !u!1 &283994726
@@ -2047,10 +2055,10 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: -7.15
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -2075,7 +2083,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897148079}
   m_LocalRotation: {x: 0.35355338, y: 0.35355338, z: -0.1464466, w: 0.8535535}
-  m_LocalPosition: {x: -2.906, y: 1, z: -3.874}
+  m_LocalPosition: {x: -7.71, y: 7.8, z: -8.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

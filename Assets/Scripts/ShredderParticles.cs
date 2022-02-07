@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ShredderParticles : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class ShredderParticles : MonoBehaviour
 
     private void OnDisable()
     {
-        _shredder.DragableRecieved += Play;
+        _shredder.DragableRecieved -= Play;
     }
 
     private void Play()
