@@ -73,6 +73,10 @@ MonoBehaviour:
     m_Address: Assets/Scenes/WaterTheFlower.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: d46c07628ab7ef043979a73488fd2a31
+    m_Address: Assets/Scenes/Garden1Lvl2.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 99e8b566354f2794faa517ea107cce23, type: 2}
   m_SchemaSet:

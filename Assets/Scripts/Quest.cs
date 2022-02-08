@@ -44,7 +44,7 @@ public class Quest : MonoBehaviour
         if (IsCompleted())
         {
             Debug.Log("win");
-            _saveSystem.SaveQuestProgession(_name, (int)QuestProgression.Completed);
+            _saveSystem.SaveQuestProgession(_name, (int)QuestProgressionState.Completed);
             Completed?.Invoke();
         }
     }
