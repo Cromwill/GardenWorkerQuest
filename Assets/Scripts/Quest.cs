@@ -2,17 +2,22 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Quest : MonoBehaviour
 {
     [SerializeField] private List<Task> _tasks;
 
+    private string _name;
+    private SaveSystem _saveSystem;
     private int _taskCounter;
 
     public Action Completed;
 
     private void Awake()
     {
+        _name = SceneManager.GetActiveScene().name;
+        _saveSystem = FindObjectOfType<SaveSystem>();
         _taskCounter = _tasks.Count;
     }
 
@@ -39,6 +44,7 @@ public class Quest : MonoBehaviour
         if (IsCompleted())
         {
             Debug.Log("win");
+            _saveSystem.SaveQuestProgession(_name, (int)QuestProgression.Completed);
             Completed?.Invoke();
         }
     }

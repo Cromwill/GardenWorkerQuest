@@ -47,6 +47,13 @@ public class PositionPersistence : MonoBehaviour
         return new Vector3(xPosition, yPosition, zPosition);
     }
 
+    private void DeleteSavedPosition()
+    {
+        PlayerPrefs.DeleteKey(xPosition);
+        PlayerPrefs.DeleteKey(yPosition);
+        PlayerPrefs.DeleteKey(zPosition);
+    }
+
     private bool HasSavedPosition()
     {
         return PlayerPrefs.HasKey(xPosition);

@@ -25,8 +25,8 @@ public class CameraRotator : MonoBehaviour
             xRotation -= pointerY;
             yRotation += pointerX;
 
-            xRotation = Mathf.Clamp(xRotation, -15f, 15f);
-            yRotation = Mathf.Clamp(yRotation, -15f, 15f);
+            xRotation = Mathf.Clamp(xRotation, -15f, 30f);
+            yRotation = Mathf.Clamp(yRotation, -15f, 10f);
 
             transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
         }
