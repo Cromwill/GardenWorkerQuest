@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class LevelComplition : MonoBehaviour
 {
-    [SerializeField] private QuestEnter _nextLevelEnter;
-
     private QuestProgression[] _questsProgression;
     private int _counter;
 
@@ -29,17 +27,11 @@ public class LevelComplition : MonoBehaviour
         if (IsQuestCompleted())
         {
             AllQuestsCompleted?.Invoke();
-            EnableNextLevelEnter();
         }
     }
 
     public bool IsQuestCompleted()
     {
         return _counter <= 0;
-    }
-
-    private void EnableNextLevelEnter()
-    {
-        _nextLevelEnter.gameObject.SetActive(true);
     }
 }

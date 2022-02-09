@@ -93,6 +93,14 @@ MonoBehaviour:
     m_Address: Assets/Scenes/StickSceneV2.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: e8724afb67f6cd04697e5de87161e401
+    m_Address: Assets/Scenes/Garden1WinterLvl4.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4ace6e9abaa017a489dd70db84e82562
+    m_Address: Assets/Scenes/Garden1WinterLvl5.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 99e8b566354f2794faa517ea107cce23, type: 2}
   m_SchemaSet:

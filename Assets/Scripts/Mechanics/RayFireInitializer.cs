@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using RayFire;
 
+[RequireComponent(typeof(Collider))]
 public class RayFireInitializer : MonoBehaviour
 {
     [SerializeField] private RayfireRigid _rayFireRidid;
     [SerializeField] private Breakable _breakable;
     [SerializeField] private bool _demolishOnDurabilityEnd;
 
+    private Collider _collider;
+
     private void OnEnable()
     {
-        if(_breakable != null)
-            _breakable.DurabilityEnded += Init;
+        _collider = GetComponent<Collider>();
+
+        if (_breakable != null)
+            _breakable.DurabilityEnded += Activate;
 
         if(_demolishOnDurabilityEnd)
             _breakable.DurabilityEnded += Demolish;
@@ -21,15 +26,17 @@ public class RayFireInitializer : MonoBehaviour
     private void OnDisable()
     {
         if (_breakable != null)
-            _breakable.DurabilityEnded -= Init;
+            _breakable.DurabilityEnded -= Activate;
 
         if (_demolishOnDurabilityEnd)
             _breakable.DurabilityEnded -= Demolish;
     }
 
-    private void Init()
+    private void Activate()
     {
-        _rayFireRidid.Initialize();
+        _rayFireRidid.Activate();
+        _collider.enabled = false;
+        _breakable.enabled = false;
     }
 
     public void Init(RayfireRigid rigid)

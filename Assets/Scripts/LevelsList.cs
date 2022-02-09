@@ -38,6 +38,13 @@ public class LevelsList : MonoBehaviour
     {
         _gardenLevels[CurrentLevelIndex].LoadSceneAsync();
     }
+
+    public void LoadRandomLevel()
+    {
+        int index = Random.Range(0, _gardenLevels.Length);
+
+        _gardenLevels[index].LoadSceneAsync();
+    }
     
     public void SetCurrentLevel(int index)
     {
