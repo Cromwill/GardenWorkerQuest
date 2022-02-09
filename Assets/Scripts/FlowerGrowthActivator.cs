@@ -15,12 +15,14 @@ public class FlowerGrowthActivator : MonoBehaviour
 
     private void OnEnable()
     {
-        _task.Complete += Activate;
+        if(_task !=null)
+            _task.Complete += Activate;
     }
 
     private void OnDisable()
     {
-        _task.Complete -= Activate;
+        if (_task != null)
+            _task.Complete -= Activate;
     }
 
     private void Activate()

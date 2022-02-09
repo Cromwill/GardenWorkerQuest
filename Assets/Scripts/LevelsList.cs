@@ -7,32 +7,49 @@ public class LevelsList : MonoBehaviour
 {
     [SerializeField] private AssetReference[] _gardenLevels;
     [SerializeField] private LevelComplition _levelComplition;
+    [SerializeField] private int _levelIndexForTests;
 
-    private int _currentLevelIndex = 0;
+    public int CurrentLevelIndex { get; private set; }
     private string _levelKey = "level";
 
     private void Awake()
     {
-        if(PlayerPrefs.HasKey(_levelKey))
-            _currentLevelIndex = PlayerPrefs.GetInt(_levelKey);
+        if (PlayerPrefs.HasKey(_levelKey))
+            CurrentLevelIndex = PlayerPrefs.GetInt(_levelKey);
+        else
+            CurrentLevelIndex = _levelIndexForTests;
+
+        Debug.Log("hi" + CurrentLevelIndex + gameObject.name);
     }
 
     private void OnEnable()
     {
-        _levelComplition.AllQuestsCompleted += OnQuestsComplition;
+        if(_levelComplition != null)
+            _levelComplition.AllQuestsCompleted += OnQuestsComplition;
     }
 
     private void OnDisable()
     {
-        _levelComplition.AllQuestsCompleted -= OnQuestsComplition;
+        if (_levelComplition != null)
+            _levelComplition.AllQuestsCompleted -= OnQuestsComplition;
+    }
+
+    public void LoadCurrentLevel()
+    {
+        _gardenLevels[CurrentLevelIndex].LoadSceneAsync();
+    }
+    
+    public void SetCurrentLevel(int index)
+    {
+        CurrentLevelIndex = index;
     }
 
     private void OnQuestsComplition()
     {
-        if (_currentLevelIndex < _gardenLevels.Length)
+        if (CurrentLevelIndex < _gardenLevels.Length-1)
         {
-            _currentLevelIndex++;
-            PlayerPrefs.SetInt(_levelKey, _currentLevelIndex);
+            CurrentLevelIndex++;
+            PlayerPrefs.SetInt(_levelKey, CurrentLevelIndex);
         }
     }
 }

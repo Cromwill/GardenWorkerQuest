@@ -5,8 +5,8 @@ using UnityEngine;
 public class Trail : MonoBehaviour
 {
     [SerializeField] private GameObject _trail;
+    [SerializeField] private float _distance = -19f;
 
-    private float _distance = -19f;
 
     private void Update()
     {

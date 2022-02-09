@@ -18,7 +18,8 @@ public class PositionPersistence : MonoBehaviour
         if (HasSavedPosition())
             _positionBeforeLoading = LoadPosition();
 
-        _player.transform.position = _positionBeforeLoading;
+        if(_player != null)
+            _player.transform.position = _positionBeforeLoading;
     }
 
     private void OnEnable()

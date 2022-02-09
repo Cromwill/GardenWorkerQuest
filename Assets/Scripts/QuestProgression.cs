@@ -7,7 +7,7 @@ public class QuestProgression : MonoBehaviour
     [SerializeField] private string _questSceneName;
     [SerializeField] private QuestProps _questProps;
 
-    public bool IsComplete;
+    public bool IsComplete { get; private set; }
 
     private SaveSystem _saveSystem;
 
