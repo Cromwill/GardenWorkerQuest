@@ -77,6 +77,22 @@ MonoBehaviour:
     m_Address: Assets/Scenes/Garden1Lvl2.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: ac8d7bcf3cfc86444b28a13e24fb1b96
+    m_Address: Assets/Scenes/Garden1Lvl3.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c691b1ca1a7585f4e842d8a979d4be6e
+    m_Address: Assets/Scenes/JunkCleanerV2.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 73283961b9e5a384c88105122e5c8d75
+    m_Address: Assets/Scenes/WindowWasherV1.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a4e0238974883274e88b12e2bd1c343e
+    m_Address: Assets/Scenes/StickSceneV2.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 99e8b566354f2794faa517ea107cce23, type: 2}
   m_SchemaSet:

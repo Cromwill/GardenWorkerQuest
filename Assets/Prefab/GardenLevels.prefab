@@ -54,8 +54,12 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  - m_AssetGUID: ac8d7bcf3cfc86444b28a13e24fb1b96
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
   _levelComplition: {fileID: 7365659106480429532}
-  _currentLevelIndex: 0
+  _levelIndexForTests: 0
 --- !u!114 &7365659106480429532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,3 +72,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985d9125e26d3804083f0a145f56612d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _nextLevelEnter: {fileID: 0}
