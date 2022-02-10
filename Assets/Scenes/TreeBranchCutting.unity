@@ -317,6 +317,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 875354218707671732, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
+      propertyPath: initialization
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 875354218707671732, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
       propertyPath: simulationType
       value: 2
       objectReference: {fileID: 0}
@@ -341,6 +345,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1192692724173614633, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192692725247660617, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -369,6 +377,10 @@ PrefabInstance:
       value: GardenLvl2
       objectReference: {fileID: 0}
     - target: {fileID: 6194544746497673706, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786110590622762289, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -505,6 +517,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4ca5755bbd82dc40800a9283e4047f4, type: 3}
+--- !u!114 &730186824 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6167072576893423353, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+  m_PrefabInstance: {fileID: 1011459581}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4755f87bedbdfb43be649c969305a3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &837016938 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 875354219978836383, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
@@ -636,7 +659,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6179014172309339337, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179014172309339337, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 730186824}
+    - target: {fileID: 6179014172309339337, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnButtonClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179014172309339337, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ButtonBackToGarden, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179014172309339337, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1439881392191705740, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
@@ -655,7 +694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7365659106480429523, guid: 46821b497e88ba14299783432eca6e17, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7365659106480429523, guid: 46821b497e88ba14299783432eca6e17, type: 3}
       propertyPath: m_LocalPosition.x
@@ -704,53 +743,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7365659106480429532, guid: 46821b497e88ba14299783432eca6e17, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 46821b497e88ba14299783432eca6e17, type: 3}
---- !u!1 &1127110001
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1127110003}
-  - component: {fileID: 1127110002}
-  m_Layer: 0
-  m_Name: RayfireInitializer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1127110002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127110001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af741a42d711f53489dc909df677c805, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rayFireRidid: {fileID: 0}
-  _breakable: {fileID: 0}
-  _demolishOnDurabilityEnd: 0
---- !u!4 &1127110003
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127110001}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1142187532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,7 +995,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3097986874499477758
 PrefabInstance:
