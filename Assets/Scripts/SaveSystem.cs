@@ -15,6 +15,11 @@ public class SaveSystem : MonoBehaviour
         return PlayerPrefs.GetInt(keyName);
     }
 
+    public void DeleteQuestProgression(string questSceneName)
+    {
+        PlayerPrefs.DeleteKey(questSceneName);
+    }
+
     public void DeleteProgession()
     {
         PlayerPrefs.DeleteAll();

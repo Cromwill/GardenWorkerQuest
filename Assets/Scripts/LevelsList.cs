@@ -18,24 +18,23 @@ public class LevelsList : MonoBehaviour
             CurrentLevelIndex = PlayerPrefs.GetInt(_levelKey);
         else
             CurrentLevelIndex = _levelIndexForTests;
-
-        Debug.Log("hi" + CurrentLevelIndex + gameObject.name);
     }
 
     private void OnEnable()
     {
         if(_levelComplition != null)
-            _levelComplition.AllQuestsCompleted += OnQuestsComplition;
+            _levelComplition.AllQuestsCompleted += OnAllQuestsComplition;
     }
 
     private void OnDisable()
     {
         if (_levelComplition != null)
-            _levelComplition.AllQuestsCompleted -= OnQuestsComplition;
+            _levelComplition.AllQuestsCompleted -= OnAllQuestsComplition;
     }
 
     public void LoadCurrentLevel()
     {
+        Debug.Log(CurrentLevelIndex);
         _gardenLevels[CurrentLevelIndex].LoadSceneAsync();
     }
 
@@ -51,11 +50,16 @@ public class LevelsList : MonoBehaviour
         CurrentLevelIndex = index;
     }
 
-    private void OnQuestsComplition()
+    private void OnAllQuestsComplition()
     {
         if (CurrentLevelIndex < _gardenLevels.Length-1)
         {
             CurrentLevelIndex++;
+            PlayerPrefs.SetInt(_levelKey, CurrentLevelIndex);
+        } 
+        else
+        {
+            CurrentLevelIndex = 0;
             PlayerPrefs.SetInt(_levelKey, CurrentLevelIndex);
         }
     }

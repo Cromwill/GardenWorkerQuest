@@ -12,6 +12,8 @@ public class LevelComplition : MonoBehaviour
 
     private void Start()
     {
+
+        Debug.Log(gameObject.name);
         _questsProgression = FindObjectsOfType<QuestProgression>();
 
         _counter = _questsProgression.Length;

@@ -66,6 +66,10 @@ MonoBehaviour:
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
+  - m_AssetGUID: 7abb191539e918a48929ddd197a1387f
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
   _levelComplition: {fileID: 7365659106480429532}
   _levelIndexForTests: 0
 --- !u!114 &7365659106480429532

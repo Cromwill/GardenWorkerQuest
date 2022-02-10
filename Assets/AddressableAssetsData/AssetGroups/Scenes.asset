@@ -101,6 +101,22 @@ MonoBehaviour:
     m_Address: Assets/Scenes/Garden1WinterLvl5.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 7abb191539e918a48929ddd197a1387f
+    m_Address: Assets/Scenes/Garden1WinterLvl6.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c35dc5ac9f69e0c449dd51a7532b5347
+    m_Address: Assets/Scenes/SnowCleanerSceneV2.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e07aafbee9c9c514586a0f4b35cc1a0f
+    m_Address: Assets/Scenes/SnowCleanerSceneV3.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d34938d3d242b2442aae8a6a6296b378
+    m_Address: Assets/Scenes/CutLogsSceneWinter.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 99e8b566354f2794faa517ea107cce23, type: 2}
   m_SchemaSet:

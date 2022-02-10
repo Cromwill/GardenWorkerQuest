@@ -248,9 +248,7 @@ GameObject:
   - component: {fileID: 6179014172309339339}
   - component: {fileID: 6179014172309339336}
   - component: {fileID: 6179014172309339337}
-  - component: {fileID: 8643316085670021514}
-  - component: {fileID: 4362113083792463934}
-  - component: {fileID: 1439881392191705740}
+  - component: {fileID: 6167072576893423353}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -361,9 +359,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1439881392191705740}
-        m_TargetAssemblyTypeName: LevelsList, Assembly-CSharp
-        m_MethodName: LoadCurrentLevel
+      - m_Target: {fileID: 6167072576893423353}
+        m_TargetAssemblyTypeName: ButtonBackToGarden, Assembly-CSharp
+        m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -373,7 +371,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8643316085670021514
+--- !u!114 &6167072576893423353
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -382,46 +380,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6179014172309339335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 320e9fb01f41b5b4a9dcd9565fcd2de0, type: 3}
+  m_Script: {fileID: 11500000, guid: c4755f87bedbdfb43be649c969305a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scene:
-    m_AssetGUID: 9fc0d4010bbf28b4594072e72b8655ab
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
-  _sceneLoader: {fileID: 4362113083792463934}
---- !u!114 &4362113083792463934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6179014172309339335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afe064d8aecdcf445834aba2664c00cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1439881392191705740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6179014172309339335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a3e8f9f6aeb248459c654f38a4ff9e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gardenLevels:
-  - m_AssetGUID: 9fc0d4010bbf28b4594072e72b8655ab
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
-  - m_AssetGUID: d46c07628ab7ef043979a73488fd2a31
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
-  _levelComplition: {fileID: 0}
