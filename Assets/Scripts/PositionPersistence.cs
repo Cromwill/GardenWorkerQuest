@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class PositionPersistence : MonoBehaviour
 {
-    [SerializeField] private Player _player;
 
     [SerializeField] private Vector3 _positionBeforeLoading;
     [SerializeField] private SceneLoader _sceneLoader;
 
+    private Player _player;
     private string xPosition = "xPosition";
     private string yPosition = "yPosition";
     private string zPosition = "zPosition";
 
     private void Start()
     {
+        _player = FindObjectOfType<Player>();
+
         if (HasSavedPosition())
             _positionBeforeLoading = LoadPosition();
 

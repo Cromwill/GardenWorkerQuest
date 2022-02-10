@@ -16,7 +16,7 @@ public class QuestEnter : Interactable
         _sceneLoader = FindObjectOfType<SceneLoader>();
     }
 
-    public override void OnInteract()
+    public void LoadQuestScene()
     {
         _sceneLoader.Load(_scene);
     }

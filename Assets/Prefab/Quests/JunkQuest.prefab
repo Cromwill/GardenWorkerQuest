@@ -64,7 +64,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _questSceneName: JunkCleaner
   _questProps: {fileID: 3002849812861835236}
-  IsComplete: 0
 --- !u!1001 &2856018266073666133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72,6 +71,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3002849812861835259}
     m_Modifications:
+    - target: {fileID: 4794619662036981383, guid: 89929d0547c318340a7bbad48ede89f0, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8324034095035654756, guid: 89929d0547c318340a7bbad48ede89f0, type: 3}
       propertyPath: m_RootOrder
       value: 0

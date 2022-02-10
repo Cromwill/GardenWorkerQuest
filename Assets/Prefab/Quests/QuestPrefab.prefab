@@ -64,7 +64,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _questSceneName: 
   _questProps: {fileID: 0}
-  IsComplete: 0
 --- !u!1001 &4446462759879078459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75,6 +74,10 @@ PrefabInstance:
     - target: {fileID: 1012991631773348248, guid: 89929d0547c318340a7bbad48ede89f0, type: 3}
       propertyPath: m_text
       value: "\u0421\u0442\u0440\u0438\u0436\u0435\u043C \u043A\u0443\u0441\u0442\u044B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012991633158485880, guid: 89929d0547c318340a7bbad48ede89f0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8324034095035654756, guid: 89929d0547c318340a7bbad48ede89f0, type: 3}
       propertyPath: m_RootOrder
