@@ -17,10 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: efab21ca018ef284b8572d679f72b3ca
   m_SerializeEntries:
-  - m_GUID: 235ad01b7ee6ab74b999c6992a65eaa1
-    m_Address: CutLogsScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: b8293cd26751be948ad5cba69b7fb84d
     m_Address: CuttingScene
     m_ReadOnly: 0
@@ -33,88 +29,16 @@ MonoBehaviour:
     m_Address: IceBreakerScene
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 9ceb7b2d5a3e6fe4aa9a9647b76f4f6a
-    m_Address: IcicleBreakerScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: f4e5fdaff39540145aef6c76ac3fc20e
-    m_Address: JunkCleaner
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: c0e69bd1d9e1dc24aa6e31cc7102f8b7
     m_Address: LeafBlowerScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 9fc0d4010bbf28b4594072e72b8655ab
-    m_Address: MainScene
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: e472dbb7a57c6634faef2458cb7cd59e
     m_Address: SculptureScene
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: dc96d19f443a61142b759cc998cf0d91
-    m_Address: SnowCleanerScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 6b6cf382d55ef724c9cf77b3c2b9f520
-    m_Address: StickScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: f57391dbb5ab0504fad0bd60c34f2883
-    m_Address: TreeBranchCutting
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: 69cf91193d5b67b4fba490465027577e
     m_Address: WindowWasher
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: ec7df3393c18f4c44a10f2496f41ee5b
-    m_Address: Assets/Scenes/WaterTheFlower.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: d46c07628ab7ef043979a73488fd2a31
-    m_Address: Assets/Scenes/Garden1Lvl2.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: ac8d7bcf3cfc86444b28a13e24fb1b96
-    m_Address: Assets/Scenes/Garden1Lvl3.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: c691b1ca1a7585f4e842d8a979d4be6e
-    m_Address: Assets/Scenes/JunkCleanerV2.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 73283961b9e5a384c88105122e5c8d75
-    m_Address: Assets/Scenes/WindowWasherV1.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: a4e0238974883274e88b12e2bd1c343e
-    m_Address: Assets/Scenes/StickSceneV2.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: e8724afb67f6cd04697e5de87161e401
-    m_Address: Assets/Scenes/Garden1WinterLvl4.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 4ace6e9abaa017a489dd70db84e82562
-    m_Address: Assets/Scenes/Garden1WinterLvl5.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 7abb191539e918a48929ddd197a1387f
-    m_Address: Assets/Scenes/Garden1WinterLvl6.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: c35dc5ac9f69e0c449dd51a7532b5347
-    m_Address: Assets/Scenes/SnowCleanerSceneV2.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: e07aafbee9c9c514586a0f4b35cc1a0f
-    m_Address: Assets/Scenes/SnowCleanerSceneV3.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: d34938d3d242b2442aae8a6a6296b378
-    m_Address: Assets/Scenes/CutLogsSceneWinter.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

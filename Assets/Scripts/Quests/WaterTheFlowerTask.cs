@@ -9,7 +9,7 @@ public class WaterTheFlowerTask : Task
     private void Awake()
     {
         _flowers = FindObjectsOfType<Flower>();
-        _counter = _flowers.Length;
+        MaxValue = _flowers.Length;
     }
 
     private void OnEnable()

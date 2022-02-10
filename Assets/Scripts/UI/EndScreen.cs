@@ -1,18 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class EndScreen : MonoBehaviour
 {
     [SerializeField] private LevelComplition _levelComplition;
     [SerializeField] private Animator _animator;
-    [SerializeField] private WinScreen _winScreen;
+    [SerializeField] private GameObject _winScreen;
+    [SerializeField] private TMP_Text _text;
 
     private string LevelEnd = "LevelEnd";
+    private LevelsList _levelList;
+    private JoystickCanvas _joyStickCanvas;
 
+    private void Start()
+    {
+        _winScreen.SetActive(false);
+
+    }
     private void OnEnable()
     {
+        _levelList = FindObjectOfType<LevelsList>();
+        _joyStickCanvas = FindObjectOfType<JoystickCanvas>();
         _levelComplition.AllQuestsCompleted += Show;
+
+        int levelIndex = _levelList.CurrentLevelIndex + 1;
+        _text.text = $" Level {levelIndex} completed!";
     }
 
     private void OnDisable()
@@ -23,6 +37,7 @@ public class EndScreen : MonoBehaviour
     private void Show()
     {
         _winScreen.gameObject.SetActive(true);
+        _joyStickCanvas.gameObject.SetActive(false);
         _animator.SetTrigger(LevelEnd);
     }
 }

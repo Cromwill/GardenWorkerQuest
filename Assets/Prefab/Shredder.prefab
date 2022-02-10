@@ -640,9 +640,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180.795
       objectReference: {fileID: 0}
+    - target: {fileID: 985828458344110743, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d386c5d9fb941e845b73fe6da5491ef2, type: 2}
     - target: {fileID: 3578966366248182591, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
       propertyPath: m_Name
       value: Shredder
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128531926734895124, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
+      propertyPath: UVModule.tilesX
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128531926734895124, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
+      propertyPath: UVModule.tilesY
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128531926734895124, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
+      propertyPath: UVModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128531926734895124, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
+      propertyPath: InitialModule.size3D
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128531926734895124, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128531926734895124, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
@@ -1267,9 +1295,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180.795
       objectReference: {fileID: 0}
+    - target: {fileID: 985828458344110743, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d386c5d9fb941e845b73fe6da5491ef2, type: 2}
     - target: {fileID: 3578966366248182591, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
       propertyPath: m_Name
       value: Shredder
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128531926734895124, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
+      propertyPath: UVModule.tilesX
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128531926734895124, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
+      propertyPath: UVModule.tilesY
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128531926734895124, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
+      propertyPath: UVModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128531926734895124, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128531926734895124, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 019aab9cd501a7a44b8a447946094bdc, type: 3}

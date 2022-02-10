@@ -12,5 +12,7 @@ public static class PlayerAnimatorController
     public static class State
     {
         public const string Walk = "Walk";
+
+        public const string Celebration = "Celebration";
     }
 }

@@ -227,6 +227,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1026778303352445728, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026778303352445728, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1439881392191705740, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
       propertyPath: _levelIndexForTests
       value: 2
@@ -238,6 +246,18 @@ PrefabInstance:
     - target: {fileID: 1439881392191705740, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
       propertyPath: _gardenLevels.Array.data[2].m_AssetGUID
       value: ac8d7bcf3cfc86444b28a13e24fb1b96
+      objectReference: {fileID: 0}
+    - target: {fileID: 5189238979160545373, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5189238979160545373, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5189238979160545373, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6179014171910010545, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
       propertyPath: m_Name
@@ -1451,6 +1471,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 187.42
       objectReference: {fileID: 0}
+    - target: {fileID: 1625766354192439505, guid: 132e4402ddf2bb546a6e1f09c1aa20ce, type: 3}
+      propertyPath: _touchRadius
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1625766354192439506, guid: 132e4402ddf2bb546a6e1f09c1aa20ce, type: 3}
       propertyPath: m_SizeDelta.x
       value: 215
@@ -1467,6 +1491,10 @@ PrefabInstance:
       propertyPath: _uiCamera
       value: 
       objectReference: {fileID: 1665242642}
+    - target: {fileID: 1625766355337221653, guid: 132e4402ddf2bb546a6e1f09c1aa20ce, type: 3}
+      propertyPath: _touchRadius
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1625766355337221654, guid: 132e4402ddf2bb546a6e1f09c1aa20ce, type: 3}
       propertyPath: m_SizeDelta.x
       value: 216.34
@@ -1607,7 +1635,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6555029388342791087, guid: 132e4402ddf2bb546a6e1f09c1aa20ce, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 132e4402ddf2bb546a6e1f09c1aa20ce, type: 3}
 --- !u!1001 &7782545951404242400
 PrefabInstance:

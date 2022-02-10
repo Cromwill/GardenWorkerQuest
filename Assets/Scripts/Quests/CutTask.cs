@@ -9,7 +9,7 @@ public class CutTask : Task
     private void Awake()
     {
         _cutable = FindObjectsOfType<Cutable>();
-        _counter = _cutable.Length;
+        MaxValue = _cutable.Length;
     }
 
     private void OnEnable()

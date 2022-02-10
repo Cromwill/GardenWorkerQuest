@@ -9,6 +9,7 @@ public class PositionPersistence : MonoBehaviour
     [SerializeField] private SceneLoader _sceneLoader;
 
     private Player _player;
+    private LevelComplition _levelComplition;
     private string xPosition = "xPosition";
     private string yPosition = "yPosition";
     private string zPosition = "zPosition";
@@ -26,12 +27,22 @@ public class PositionPersistence : MonoBehaviour
 
     private void OnEnable()
     {
+        _levelComplition = FindObjectOfType<LevelComplition>();
+        _levelComplition.AllQuestsCompleted += DeleteSavedPosition;
         _sceneLoader.LoadingScene += Save;
     }
 
     private void OnDisable()
     {
         _sceneLoader.LoadingScene -= Save;
+        _levelComplition.AllQuestsCompleted -= DeleteSavedPosition;
+    }
+
+    private void DeleteSavedPosition()
+    {
+        PlayerPrefs.DeleteKey(xPosition);
+        PlayerPrefs.DeleteKey(yPosition);
+        PlayerPrefs.DeleteKey(zPosition);
     }
 
     private void Save()
@@ -48,13 +59,6 @@ public class PositionPersistence : MonoBehaviour
         float zPosition = PlayerPrefs.GetFloat(this.zPosition, _player.transform.position.z);
 
         return new Vector3(xPosition, yPosition, zPosition);
-    }
-
-    private void DeleteSavedPosition()
-    {
-        PlayerPrefs.DeleteKey(xPosition);
-        PlayerPrefs.DeleteKey(yPosition);
-        PlayerPrefs.DeleteKey(zPosition);
     }
 
     private bool HasSavedPosition()

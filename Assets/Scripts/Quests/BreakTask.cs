@@ -9,7 +9,7 @@ public class BreakTask : Task
     private void Awake()
     {
         _breakables = FindObjectsOfType<Breakable>();
-        _counter = _breakables.Length;
+        MaxValue = _breakables.Length;
     }
 
     private void OnEnable()

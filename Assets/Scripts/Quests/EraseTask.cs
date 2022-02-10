@@ -9,12 +9,12 @@ public class EraseTask : Task
     private void Awake()
     {
         _masks = FindObjectsOfType<Eraseable>();
-        _counter = _masks.Length;
+        MaxValue = _masks.Length;
     }
 
     private void OnEnable()
     {
-        _counter = _masks.Length;
+        MaxValue = _masks.Length;
 
         foreach (var mask in _masks)
         {

@@ -9,7 +9,7 @@ public class CleaningTask : Task
     private void Awake()
     {
         _shredders = FindObjectsOfType<Shredder>();
-        _counter = FindObjectsOfType<Dragable>().Length;
+        MaxValue = FindObjectsOfType<Dragable>().Length;
     }
 
     private void OnEnable()

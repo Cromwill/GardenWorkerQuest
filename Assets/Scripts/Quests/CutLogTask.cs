@@ -9,7 +9,7 @@ public class CutLogTask : Task
 
     private void OnEnable()
     {
-        _counter = _sliceAmount;
+        MaxValue = _sliceAmount;
         RFDemolitionEvent.GlobalEvent += OnSliced;
     }
 

@@ -9,6 +9,7 @@ public class Saw : MonoBehaviour
     [SerializeField] private InputActionAdapter _adapter;
     [SerializeField] private float _delay;
 
+    private Quest _quest;
     private float _timeStamp;
     private Animator _animator;
 
@@ -19,14 +20,25 @@ public class Saw : MonoBehaviour
 
     private void OnEnable()
     {
+        _quest = FindObjectOfType<Quest>();
         _adapter.Released += Cut;
+
+        if (_quest != null)
+            _quest.Completed += DisableControl;
     }
 
     private void OnDisable()
     {
         _adapter.Released -= Cut;
+
+        if (_quest != null)
+            _quest.Completed += DisableControl;
     }
 
+    private void DisableControl()
+    {
+        _adapter.Released -= Cut;
+    }
     private void Cut()
     {
         if (IsOnCooldown())
