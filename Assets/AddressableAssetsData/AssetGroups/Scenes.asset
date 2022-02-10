@@ -17,10 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: efab21ca018ef284b8572d679f72b3ca
   m_SerializeEntries:
-  - m_GUID: b8293cd26751be948ad5cba69b7fb84d
-    m_Address: CuttingScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: 9896e8c4c867dc546804e6dd29bfb50b
     m_Address: FencePainter
     m_ReadOnly: 0

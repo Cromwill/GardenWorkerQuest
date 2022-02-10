@@ -1457,7 +1457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 335648492}
   _offset: {x: 5.2, y: 7.66, z: 0}
-  FOVChangeSpeed: 0
+  FOVChangeSpeed: 1
 --- !u!1001 &980428762
 PrefabInstance:
   m_ObjectHideFlags: 0

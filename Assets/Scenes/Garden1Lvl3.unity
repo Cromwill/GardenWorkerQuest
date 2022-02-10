@@ -1273,6 +1273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 335648486}
   _offset: {x: 5.2, y: 7.66, z: 0}
+  FOVChangeSpeed: 1
 --- !u!114 &1011159454 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4198238865095144238, guid: b6332035db0c8e74dbfe448fea0e4a73, type: 3}
