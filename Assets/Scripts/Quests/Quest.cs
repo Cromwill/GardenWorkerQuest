@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class Quest : MonoBehaviour
 {
     [SerializeField] private List<Task> _tasks;
+    [SerializeField] private float _customDelay;
 
+    private float _delay = 0.8f;
     private string _name;
     private SaveSystem _saveSystem;
     private int _taskCounter;
@@ -16,6 +18,9 @@ public class Quest : MonoBehaviour
 
     private void Awake()
     {
+        if (_customDelay != 0)
+            _delay = _customDelay;
+
         _name = SceneManager.GetActiveScene().name;
         _saveSystem = FindObjectOfType<SaveSystem>();
         _taskCounter = _tasks.Count;
@@ -45,8 +50,22 @@ public class Quest : MonoBehaviour
         {
             Debug.Log("win");
             _saveSystem.SaveQuestProgession(_name, (int)QuestProgressionState.Completed);
-            Completed?.Invoke();
+            StartCoroutine(WaitingForDelayBeforComplete());
         }
+    }
+
+    private IEnumerator WaitingForDelayBeforComplete()
+    {
+        float timePassed = 0;
+
+        while(timePassed <_delay)
+        {
+            timePassed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        Completed?.Invoke();
     }
 
     private bool IsCompleted()

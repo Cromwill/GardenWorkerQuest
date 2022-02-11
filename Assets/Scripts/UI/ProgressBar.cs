@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class ProgressBar : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
+    [SerializeField] private float _changeSpeed;
 
     private Task _task;
+    private float _currentValue;
 
     private void OnEnable()
     {
@@ -24,6 +26,18 @@ public class ProgressBar : MonoBehaviour
     private void OnCounterChanged(int counter, int maxValue)
     {
         _slider.maxValue = maxValue;
-        _slider.value = counter;
+        _currentValue = counter;
+
+        StartCoroutine(ChangeCroutine());
+    }
+
+    private IEnumerator ChangeCroutine()
+    {
+        while(_slider.value != _currentValue)
+        {
+            _slider.value = Mathf.MoveTowards(_slider.value, _currentValue, _changeSpeed * Time.deltaTime);
+
+            yield return null;
+        }
     }
 }

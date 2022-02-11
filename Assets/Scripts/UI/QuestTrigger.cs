@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UiSlider : MonoBehaviour
+public class QuestTrigger : MonoBehaviour
 {
     [SerializeField] private float yOffset;
     [SerializeField] private Slider _slider;
     [SerializeField] private float _changeSpeed;
 
     private Player _player;
-    private QuestEnter _questEnter;
+    private IQuestLoader _questEnter;
     private Coroutine _coroutine;
     private void Start()
     {
@@ -25,7 +25,7 @@ public class UiSlider : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out QuestEnter questEnter))
+        if (other.TryGetComponent(out IQuestLoader questEnter))
         {
             _questEnter = questEnter;
 
@@ -38,7 +38,7 @@ public class UiSlider : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.TryGetComponent(out QuestEnter questEnter))
+        if (other.TryGetComponent(out IQuestLoader questEnter))
         {
             StopCoroutine(_coroutine);
             _coroutine = StartCoroutine(FillingDown());

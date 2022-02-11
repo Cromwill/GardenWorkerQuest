@@ -12,6 +12,11 @@ public class Task : MonoBehaviour
     public Action Complete;
     public Action<int,int> CounterChanged;
 
+    private void Start()
+    {
+        CounterChanged?.Invoke(counter, MaxValue);
+    }
+
     protected void CheckComplition()
     {
         counter++;

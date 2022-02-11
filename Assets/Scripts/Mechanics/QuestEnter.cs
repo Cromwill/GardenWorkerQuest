@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
 
-public class QuestEnter : Interactable
+public class QuestEnter : Interactable, IQuestLoader
 {
     [SerializeField] private AssetReference _scene;
 

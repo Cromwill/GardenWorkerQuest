@@ -8,9 +8,9 @@ public class PositionPersistence : MonoBehaviour
     [SerializeField] private Vector3 _positionBeforeLoading;
     [SerializeField] private SceneLoader _sceneLoader;
 
+    public Vector3 DefaultPosition = new Vector3(-56f, 0, -6.6f);
     private Player _player;
     private LevelComplition _levelComplition;
-    private Vector3 _defaultPosition = new Vector3(-56f, 0, -6.6f);
     private string xPosition = "xPosition";
     private string yPosition = "yPosition";
     private string zPosition = "zPosition";
@@ -18,11 +18,6 @@ public class PositionPersistence : MonoBehaviour
     private void Start()
     {
         _player = FindObjectOfType<Player>();
-
-        if (HasSavedPosition())
-            _player.transform.position = LoadPosition();
-        else
-            _positionBeforeLoading = _defaultPosition;
     }
 
     private void OnEnable()
@@ -52,16 +47,16 @@ public class PositionPersistence : MonoBehaviour
         PlayerPrefs.SetFloat(zPosition, _player.transform.position.z);
     }
 
-    private Vector3 LoadPosition()
+    public Vector3 LoadPosition()
     {
-        float xPosition = PlayerPrefs.GetFloat(this.xPosition, _player.transform.position.x);
-        float yPosition = PlayerPrefs.GetFloat(this.yPosition, _player.transform.position.y);
-        float zPosition = PlayerPrefs.GetFloat(this.zPosition, _player.transform.position.z);
+        float xPosition = PlayerPrefs.GetFloat(this.xPosition);
+        float yPosition = PlayerPrefs.GetFloat(this.yPosition);
+        float zPosition = PlayerPrefs.GetFloat(this.zPosition);
 
         return new Vector3(xPosition, yPosition, zPosition);
     }
 
-    private bool HasSavedPosition()
+    public bool HasSavedPosition()
     {
         return PlayerPrefs.HasKey(xPosition);
     }

@@ -7,13 +7,13 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField] private InputActionAdapter _inputHandler;
     [SerializeField] private Animator _animator;
 
-    private LevelComplition _leveComplition;
+    private GardenExit _gardenExit;
     private void OnEnable()
     {
-        _leveComplition = FindObjectOfType<LevelComplition>();
+        _gardenExit = FindObjectOfType<GardenExit>();
 
-        if (_leveComplition != null)
-            _leveComplition.AllQuestsCompleted += Celebration;
+        if (_gardenExit != null)
+            _gardenExit.ExitTriggered += Celebration;
 
         _inputHandler.MoveCalled += PlayWalkingAnimation;
         _inputHandler.MoveCanceled += PlayerIdleAnimation;
@@ -21,8 +21,8 @@ public class PlayerAnimator : MonoBehaviour
 
     private void OnDisable()
     {
-        if (_leveComplition != null)
-            _leveComplition.AllQuestsCompleted += Celebration;
+        if (_gardenExit != null)
+            _gardenExit.ExitTriggered += Celebration;
 
         _inputHandler.MoveCalled -= PlayWalkingAnimation;
         _inputHandler.MoveCanceled -= PlayerIdleAnimation;

@@ -11,7 +11,7 @@ public class CameraMover : MonoBehaviour
 
     private float _targetFieldOfView = 25f;
     private Camera _camera;
-    private LevelComplition _levelComplition;
+    private GardenExit _gardenExit;
 
     private void Start()
     {
@@ -20,13 +20,13 @@ public class CameraMover : MonoBehaviour
 
     private void OnEnable()
     {
-        _levelComplition = FindObjectOfType<LevelComplition>();
-        _levelComplition.AllQuestsCompleted += OnQuestsCompeted;
+        _gardenExit = FindObjectOfType<GardenExit>();
+        _gardenExit.ExitTriggered += OnQuestsCompeted;
     }
 
     private void OnDisable()
     {
-        _levelComplition.AllQuestsCompleted -= OnQuestsCompeted;
+        _gardenExit.ExitTriggered -= OnQuestsCompeted;
     }
     private void OnValidate()
     {
