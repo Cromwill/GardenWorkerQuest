@@ -10,10 +10,14 @@ public class LevelsList : MonoBehaviour
     [SerializeField] private int _levelIndexForTests;
 
     public int CurrentLevelIndex { get; private set; }
+    public int LastLevelIndex { get; private set; }
+
     private string _levelKey = "level";
 
     private void Awake()
     {
+        LastLevelIndex = _gardenLevels.Length;
+
         if (PlayerPrefs.HasKey(_levelKey))
             CurrentLevelIndex = PlayerPrefs.GetInt(_levelKey);
         else
