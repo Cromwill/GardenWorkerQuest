@@ -20,11 +20,9 @@ public class PositionPersistence : MonoBehaviour
         _player = FindObjectOfType<Player>();
 
         if (HasSavedPosition())
-            _positionBeforeLoading = LoadPosition();
+            _player.transform.position = LoadPosition();
         else
             _positionBeforeLoading = _defaultPosition;
-
-        _player.transform.position = _positionBeforeLoading;
     }
 
     private void OnEnable()
