@@ -10,6 +10,7 @@ public class PositionPersistence : MonoBehaviour
 
     private Player _player;
     private LevelComplition _levelComplition;
+    private Vector3 _defaultPosition = new Vector3(-56f, 0, -6.6f);
     private string xPosition = "xPosition";
     private string yPosition = "yPosition";
     private string zPosition = "zPosition";
@@ -20,9 +21,10 @@ public class PositionPersistence : MonoBehaviour
 
         if (HasSavedPosition())
             _positionBeforeLoading = LoadPosition();
+        else
+            _positionBeforeLoading = _defaultPosition;
 
-        if(_player != null)
-            _player.transform.position = _positionBeforeLoading;
+        _player.transform.position = _positionBeforeLoading;
     }
 
     private void OnEnable()
