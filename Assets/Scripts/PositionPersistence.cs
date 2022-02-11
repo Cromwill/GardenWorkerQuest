@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class PositionPersistence : MonoBehaviour
 {
-
-    [SerializeField] private Vector3 _positionBeforeLoading;
     [SerializeField] private SceneLoader _sceneLoader;
 
     public Vector3 DefaultPosition = new Vector3(-56f, 0, -6.6f);
     private Player _player;
     private LevelComplition _levelComplition;
-    private string xPosition = "xPosition";
-    private string yPosition = "yPosition";
-    private string zPosition = "zPosition";
+    private string _xPosition = "xPos";
+    private string _yPosition = "yPos";
+    private string _zPosition = "zPos";
 
     private void Start()
     {
@@ -35,29 +33,36 @@ public class PositionPersistence : MonoBehaviour
 
     private void DeleteSavedPosition()
     {
-        PlayerPrefs.DeleteKey(xPosition);
-        PlayerPrefs.DeleteKey(yPosition);
-        PlayerPrefs.DeleteKey(zPosition);
+        PlayerPrefs.DeleteKey(_xPosition);
+        PlayerPrefs.DeleteKey(_yPosition);
+        PlayerPrefs.DeleteKey(_zPosition);
     }
 
     private void Save()
     {
-        PlayerPrefs.SetFloat(xPosition, _player.transform.position.x);
-        PlayerPrefs.SetFloat(yPosition, _player.transform.position.y);
-        PlayerPrefs.SetFloat(zPosition, _player.transform.position.z);
+        PlayerPrefs.SetFloat(_xPosition, _player.transform.position.x);
+        PlayerPrefs.SetFloat(_yPosition, _player.transform.position.y);
+        PlayerPrefs.SetFloat(_zPosition, _player.transform.position.z);
     }
 
     public Vector3 LoadPosition()
     {
-        float xPosition = PlayerPrefs.GetFloat(this.xPosition);
-        float yPosition = PlayerPrefs.GetFloat(this.yPosition);
-        float zPosition = PlayerPrefs.GetFloat(this.zPosition);
+        if (HasSavedPosition())
+        {
+            float xPosition = PlayerPrefs.GetFloat(_xPosition);
+            float yPosition = PlayerPrefs.GetFloat(_yPosition);
+            float zPosition = PlayerPrefs.GetFloat(_zPosition);
 
-        return new Vector3(xPosition, yPosition, zPosition);
+            return new Vector3(xPosition, yPosition, zPosition);
+        }
+        else
+        {
+            return DefaultPosition;
+        }
     }
 
     public bool HasSavedPosition()
     {
-        return PlayerPrefs.HasKey(xPosition);
+        return PlayerPrefs.HasKey(_xPosition);
     }
 }

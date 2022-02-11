@@ -2318,17 +2318,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
---- !u!114 &1309965409 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7365659106480429532, guid: 46821b497e88ba14299783432eca6e17, type: 3}
-  m_PrefabInstance: {fileID: 7365659106626268276}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7365659106626268278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 985d9125e26d3804083f0a145f56612d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1384845010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3202,33 +3191,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1794269251364712180, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1794269251364712180, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1794269251364712180, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1794269251134873028}
-    - target: {fileID: 1794269251364712180, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1794269251421308002, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
-      propertyPath: _levelComplition
-      value: 
-      objectReference: {fileID: 1309965409}
     - target: {fileID: 1794269252353364781, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
       propertyPath: m_Name
       value: GardenProgression
-      objectReference: {fileID: 0}
-    - target: {fileID: 1794269252353364781, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1794269252353364785, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
       propertyPath: m_Pivot.x
@@ -3318,27 +3283,8 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 963194227}
-    - target: {fileID: 1794269252353364786, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1794269252378667007, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
---- !u!114 &1794269251134873028 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5089050158711705850, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
-  m_PrefabInstance: {fileID: 1794269251134873027}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 320e9fb01f41b5b4a9dcd9565fcd2de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2699738376329276263
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 160479885}
   - component: {fileID: 160479887}
   - component: {fileID: 160479886}
+  - component: {fileID: 152436361793626171}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -135,6 +136,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &152436361793626171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160479884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd4591aa848f1ff44bdaf6df9271c3d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 160479886}
 --- !u!1 &1326456368
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,10 +567,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48d778dd78b3ec74fb7c49ab88171d45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelComplition: {fileID: 0}
   _animator: {fileID: 1794269251421308003}
   _winScreen: {fileID: 1794269252378667007}
-  _text: {fileID: 160479886}
 --- !u!1 &1794269252353364781
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +629,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!114 &1794269252353364787
 MonoBehaviour:
@@ -689,7 +701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1794269252378667006
 RectTransform:
   m_ObjectHideFlags: 0

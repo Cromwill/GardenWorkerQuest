@@ -212,6 +212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tasks:
   - {fileID: 246697927}
+  _customDelay: 0
 --- !u!1 &356190246
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +880,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 571856383976265147, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
+      propertyPath: _ySpeed
+      value: 0.22
+      objectReference: {fileID: 0}
     - target: {fileID: 571856384007121480, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.63
@@ -1338,6 +1343,18 @@ PrefabInstance:
     - target: {fileID: 1439881392191705740, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
       propertyPath: _gardenLevels.Array.data[2].m_AssetGUID
       value: ac8d7bcf3cfc86444b28a13e24fb1b96
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957307617739488721, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075368219141433340, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.756
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075368219141433340, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5189238979160545373, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
       propertyPath: m_AnchorMax.x

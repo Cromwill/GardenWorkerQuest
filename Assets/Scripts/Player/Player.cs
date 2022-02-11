@@ -5,13 +5,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private PositionPersistence _positionPersistence;
-    private void Start()
+    private void Awake()
     {
         _positionPersistence = FindObjectOfType<PositionPersistence>();
 
-        if (_positionPersistence.HasSavedPosition())
-            transform.position = _positionPersistence.LoadPosition();
-        else
-            transform.position = _positionPersistence.DefaultPosition;
+        transform.position = _positionPersistence.LoadPosition();
     }
 }
