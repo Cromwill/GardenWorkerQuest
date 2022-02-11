@@ -97,6 +97,8 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _OutlineDepthOffset: 0
+    - _OutlineWidth: 1
     - _OverrideLightmapDir: 0
     - _Parallax: 0.02
     - _QueueOffset: 0
@@ -119,8 +121,8 @@ Material:
     - _VertexColorsEnabled: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.20626901, g: 0.47147197, b: 0.645, a: 1}
-    - _ColorDim: {r: 0.17181818, g: 0.39272726, b: 0.54, a: 1}
+    - _Color: {r: 0.107247055, g: 0.4179726, b: 0.62352943, a: 1}
+    - _ColorDim: {r: 0.08156864, g: 0.33461675, b: 0.50980395, a: 1}
     - _ColorDimCurve: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _ColorDimExtra: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _ColorDimSteps: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
@@ -130,5 +132,6 @@ Material:
     - _FlatRimColor: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _FlatSpecularColor: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _LightmapDirection: {r: 0, g: 1, b: 0, a: 0}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _UnityShadowColor: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
   m_BuildTextureStacks: []
