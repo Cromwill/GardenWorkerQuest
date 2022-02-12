@@ -779,7 +779,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tasks:
   - {fileID: 628414884}
-  _customDelay: 1
 --- !u!114 &628414886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7518,6 +7517,10 @@ PrefabInstance:
     - target: {fileID: 1026778303352445728, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1464241193061830423, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
+      propertyPath: _customDelay
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 2957307617739488721, guid: ba0533f13f5d850498d8d3852c093905, type: 3}
       propertyPath: m_IsActive
