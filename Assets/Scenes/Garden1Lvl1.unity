@@ -3335,6 +3335,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2699738376698173949, guid: 1186139503ab5544d8af5fe8b7bdd557, type: 3}
+      propertyPath: m_CookieSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2699738376698173949, guid: 1186139503ab5544d8af5fe8b7bdd557, type: 3}
+      propertyPath: m_ShadowAngle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2699738376698173949, guid: 1186139503ab5544d8af5fe8b7bdd557, type: 3}
+      propertyPath: m_Shadows.m_Bias
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2699738376698173949, guid: 1186139503ab5544d8af5fe8b7bdd557, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2699738376698173949, guid: 1186139503ab5544d8af5fe8b7bdd557, type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2699738376698173949, guid: 1186139503ab5544d8af5fe8b7bdd557, type: 3}
+      propertyPath: m_Shadows.m_NormalBias
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2699738376698173949, guid: 1186139503ab5544d8af5fe8b7bdd557, type: 3}
+      propertyPath: m_Shadows.m_Resolution
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2699738376698173950, guid: 1186139503ab5544d8af5fe8b7bdd557, type: 3}
       propertyPath: m_Name
       value: Directional Light
@@ -3520,7 +3548,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 335648487, guid: dcfbcc05bf9948247a0af83bc634c832, type: 3}
       propertyPath: _speed
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 335648487, guid: dcfbcc05bf9948247a0af83bc634c832, type: 3}
       propertyPath: _handler
@@ -3854,10 +3882,6 @@ PrefabInstance:
     - target: {fileID: 8604804178152069842, guid: f6a89a0c31eee75489f522030a4b6f71, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8604804178152069842, guid: f6a89a0c31eee75489f522030a4b6f71, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8604804178152069846, guid: f6a89a0c31eee75489f522030a4b6f71, type: 3}
       propertyPath: m_Pivot.x

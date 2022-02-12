@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _handler: {fileID: 0}
-  _speed: 3
+  _speed: 2
 --- !u!114 &335648488
 MonoBehaviour:
   m_ObjectHideFlags: 0
