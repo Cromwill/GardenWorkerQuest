@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class IntegrationMetric : MonoBehaviour
 {
-    private LevelsList _levelList;
     private GameLoader _gameLoader;
     private LevelProgression _levelProgression;
-    private void Start()
-    {
-        _levelList = FindObjectOfType<LevelsList>();
-    }
 
     private void OnEnable()
     {
@@ -46,9 +41,12 @@ public class IntegrationMetric : MonoBehaviour
         Amplitude.Instance.logEvent("game_start", count);
     }
 
-    private void OnLevelStart(int levelIndex)
+    public void OnLevelStart(int levelIndex)
     {
-        Amplitude.Instance.logEvent("level_start", CreateLevelProperty(levelIndex));
+        Dictionary<string, object> level = new Dictionary<string, object>();
+        level.Add("level", levelIndex);
+
+        Amplitude.Instance.logEvent("level_start", level);
     }
 
     private void OnLevelComplete(int levelComplitioTime, int levelIndex)
@@ -57,7 +55,11 @@ public class IntegrationMetric : MonoBehaviour
         time_spent.Add("time_spent", levelComplitioTime);
 
         Amplitude.Instance.logEvent("level_complete", time_spent);
-        Amplitude.Instance.logEvent("level_complete", CreateLevelProperty(levelIndex));
+
+        Dictionary<string, object> level = new Dictionary<string, object>();
+        level.Add("level", levelIndex);
+
+        Amplitude.Instance.logEvent("level_complete", level);
     }
 
     private Dictionary<string, object> CreateLevelProperty(int levelIndex)

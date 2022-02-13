@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LevelProgression : MonoBehaviour
 {
     private LevelsList _levelList;
+    private IntegrationMetric _metric;
     private int _startTime;
     private string _firstLevelStart = "FirstLevelStart";
     private int _currentLevel;
@@ -17,9 +19,9 @@ public class LevelProgression : MonoBehaviour
     private void Awake()
     {
         _levelList = FindObjectOfType<LevelsList>();
+        _metric = FindObjectOfType<IntegrationMetric>();
 
         _currentLevel = _levelList.CurrentLevelIndex +1;
-        Debug.Log("level: " + _currentLevel);
 
         _firstLevelStart = $"{_firstLevelStart}{SceneManager.GetActiveScene().name}";
 
@@ -29,7 +31,7 @@ public class LevelProgression : MonoBehaviour
 
         _startTime = (int)Time.time;
         PlayerPrefs.SetInt(_firstLevelStart, _startTime);
-        LevelStarted?.Invoke(_currentLevel);
+        _metric.OnLevelStart(_currentLevel);
     }
 
     private void OnEnable()
