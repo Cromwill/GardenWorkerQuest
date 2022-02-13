@@ -2,36 +2,51 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelProgression : MonoBehaviour
 {
-    private EndScreen _endScreen;
+    private LevelsList _levelList;
     private int _startTime;
+    private string _firstLevelStart = "FirstLevelStart";
+    private int _currentLevel;
 
-    public event Action LevelStarted;
-    public event Action<int> LevelCompleted;
-    private void Start()
+    public event Action<int> LevelStarted;
+    public event Action<int,int> LevelCompleted;
+
+    private void Awake()
     {
-        _startTime = (int)Time.time;
+        _levelList = FindObjectOfType<LevelsList>();
 
-        LevelStarted?.Invoke();
+        _currentLevel = _levelList.CurrentLevelIndex +1;
+        Debug.Log("level: " + _currentLevel);
+
+        _firstLevelStart = $"{_firstLevelStart}{SceneManager.GetActiveScene().name}";
+
+
+        if (PlayerPrefs.HasKey(_firstLevelStart))
+            return;
+
+        _startTime = (int)Time.time;
+        PlayerPrefs.SetInt(_firstLevelStart, _startTime);
+        LevelStarted?.Invoke(_currentLevel);
     }
 
     private void OnEnable()
     {
-        _endScreen = FindObjectOfType<EndScreen>();
-        _endScreen.Shown += OnLevelComplition;
+        _levelList.LevelCompleted += OnLevelComplition;
     }
 
     private void OnDisable()
     {
-        _endScreen.Shown -= OnLevelComplition;
+        _levelList.LevelCompleted -= OnLevelComplition;
     }
 
     private void OnLevelComplition(int timeWhenCompleted)
     {
-        int timeToCompete = timeWhenCompleted - _startTime;
+        int startTime = PlayerPrefs.GetInt(_firstLevelStart);
+        int timeToComplete = Mathf.Abs(timeWhenCompleted - startTime);
 
-        LevelCompleted?.Invoke(timeToCompete);
+        LevelCompleted?.Invoke(timeToComplete, _currentLevel);
     }
 }

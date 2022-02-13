@@ -15,6 +15,7 @@ public class IntegrationMetric : MonoBehaviour
     private void OnEnable()
     {
         _gameLoader = FindObjectOfType<GameLoader>();
+        _levelProgression = FindObjectOfType<LevelProgression>();
 
         if (_gameLoader != null)
             _gameLoader.GameStarted += OnGameStart;
@@ -45,24 +46,23 @@ public class IntegrationMetric : MonoBehaviour
         Amplitude.Instance.logEvent("game_start", count);
     }
 
-    private void OnLevelStart()
+    private void OnLevelStart(int levelIndex)
     {
-        Amplitude.Instance.logEvent("level_start", CreateLevelProperty());
+        Amplitude.Instance.logEvent("level_start", CreateLevelProperty(levelIndex));
     }
 
-    private void OnLevelComplete(int levelComplitioTime)
+    private void OnLevelComplete(int levelComplitioTime, int levelIndex)
     {
         Dictionary<string, object> time_spent = new Dictionary<string, object>();
         time_spent.Add("time_spent", levelComplitioTime);
 
         Amplitude.Instance.logEvent("level_complete", time_spent);
-        Amplitude.Instance.logEvent("level_complete", CreateLevelProperty());
+        Amplitude.Instance.logEvent("level_complete", CreateLevelProperty(levelIndex));
     }
 
-    private Dictionary<string, object> CreateLevelProperty()
+    private Dictionary<string, object> CreateLevelProperty(int levelIndex)
     {
         Dictionary<string, object> level = new Dictionary<string, object>();
-        int levelIndex = _levelList.CurrentLevelIndex + 1;
         level.Add("level", levelIndex);
 
         return level;

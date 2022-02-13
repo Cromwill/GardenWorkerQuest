@@ -11,6 +11,14 @@ public class GameLoader : MonoBehaviour
     private int _sessionsCount = 0;
 
     public event Action<int> GameStarted;
+
+    private void Awake()
+    {
+        Amplitude amplitude = Amplitude.Instance;
+        amplitude.logging = true;
+        amplitude.init("c4d2e95fea6a747a1b92ed2d50b8be0c");
+    }
+
     private void Start()
     {
         if (PlayerPrefs.HasKey(_sessionCountName))

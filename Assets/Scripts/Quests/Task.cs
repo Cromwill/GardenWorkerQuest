@@ -23,7 +23,6 @@ public class Task : MonoBehaviour
 
         CounterChanged?.Invoke(counter, MaxValue);
 
-        Debug.Log(counter);
         if (counter >= MaxValue)
             TaskComplete();
     }

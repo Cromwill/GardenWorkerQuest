@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,8 @@ public class LevelsList : MonoBehaviour
     public int LastLevelIndex { get; private set; }
 
     private string _levelKey = "level";
+
+    public event Action<int> LevelCompleted;
 
     private void Awake()
     {
@@ -44,9 +47,6 @@ public class LevelsList : MonoBehaviour
 
     public void LoadRandomLevel()
     {
-        int index = Random.Range(0, _gardenLevels.Length);
-
-        _gardenLevels[index].LoadSceneAsync();
     }
     
     public void SetCurrentLevel(int index)
@@ -56,6 +56,9 @@ public class LevelsList : MonoBehaviour
 
     private void OnAllQuestsComplition()
     {
+        int CompletedTime = (int)Time.time;
+        LevelCompleted?.Invoke(CompletedTime);
+
         if (CurrentLevelIndex < _gardenLevels.Length-1)
         {
             CurrentLevelIndex++;
