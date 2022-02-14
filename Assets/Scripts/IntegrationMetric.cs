@@ -69,11 +69,11 @@ public class IntegrationMetric : MonoBehaviour
 
     private void SendLevelStartToAppmetrica(int lvlIndex)
     {
-        AppMetrica.Instance.ReportEvent("StartLevel", CreateLevelProperty("LevelIndex", lvlIndex));
+        //AppMetrica.Instance.ReportEvent("StartLevel", CreateLevelProperty("LevelIndex", lvlIndex));
     }
 
     private void SendLevelEndToAppmetrica(int lvlIndex)
     {
-        AppMetrica.Instance.ReportEvent("EndLevel", CreateLevelProperty("LevelIndex", lvlIndex));
+        //AppMetrica.Instance.ReportEvent("EndLevel", CreateLevelProperty("LevelIndex", lvlIndex));
     }
 }
