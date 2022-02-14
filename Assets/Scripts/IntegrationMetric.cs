@@ -37,13 +37,10 @@ public class IntegrationMetric : MonoBehaviour
         Dictionary<string, object> count = new Dictionary<string, object>();
         count.Add("count", sessionsCount);
         Amplitude.Instance.logEvent("game_start", count);
-
-
     }
 
     public void OnLevelStart(int levelIndex)
     {
-        SendLevelStartToAppmetrica(levelIndex);
         Amplitude.Instance.logEvent("level_start", CreateLevelProperty("level", levelIndex));
     }
 
@@ -55,8 +52,6 @@ public class IntegrationMetric : MonoBehaviour
         Amplitude.Instance.logEvent("level_complete", time_spent);
 
         Amplitude.Instance.logEvent("level_complete", CreateLevelProperty("level", levelIndex));
-
-        SendLevelEndToAppmetrica(levelIndex);
     }
 
     private Dictionary<string, object> CreateLevelProperty(string key, int levelIndex)

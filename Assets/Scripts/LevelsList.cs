@@ -34,6 +34,7 @@ public class LevelsList : MonoBehaviour
         if (PlayerPrefs.HasKey(_virtualLevelKey))
             VirtualIndex = PlayerPrefs.GetInt(_virtualLevelKey);
 
+
         Invoke("StartLevel", 0.1f);
     }
 
@@ -56,7 +57,8 @@ public class LevelsList : MonoBehaviour
 
     public void StartLevel()
     {
-        LevelStarted?.Invoke(VirtualIndex);
+        int index = VirtualIndex + 1;
+        LevelStarted?.Invoke(index);
     }
     
     public void SetCurrentLevel(int index)

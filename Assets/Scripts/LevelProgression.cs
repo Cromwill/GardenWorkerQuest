@@ -13,6 +13,7 @@ public class LevelProgression : MonoBehaviour
     private string _firstLevelStart = "FirstLevelStart";
 
     public event Action<int,int> LevelCompleted;
+    public event Action LevelStarted;
 
     private void OnEnable ()
     {
@@ -40,6 +41,7 @@ public class LevelProgression : MonoBehaviour
         _startTime = (int)Time.time;
         PlayerPrefs.SetInt(_firstLevelStart, _startTime);
 
+        LevelStarted?.Invoke();
         _metric.OnLevelStart(lvlIndex);
     }
 
