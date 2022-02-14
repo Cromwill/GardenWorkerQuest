@@ -175,7 +175,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 708b7734bb8b3e742a633cd9af0b7f55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -534,7 +534,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 708b7734bb8b3e742a633cd9af0b7f55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -700,7 +700,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 708b7734bb8b3e742a633cd9af0b7f55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1078,7 +1078,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 708b7734bb8b3e742a633cd9af0b7f55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1694,6 +1694,26 @@ PrefabInstance:
     - target: {fileID: 1625766354125817820, guid: 132e4402ddf2bb546a6e1f09c1aa20ce, type: 3}
       propertyPath: m_SizeDelta.y
       value: 187.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625766354125817821, guid: 132e4402ddf2bb546a6e1f09c1aa20ce, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3d9855d3e3f2d334c9002e9b00bfae54, type: 3}
+    - target: {fileID: 1625766354125817821, guid: 132e4402ddf2bb546a6e1f09c1aa20ce, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625766354125817821, guid: 132e4402ddf2bb546a6e1f09c1aa20ce, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625766354125817821, guid: 132e4402ddf2bb546a6e1f09c1aa20ce, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625766354125817821, guid: 132e4402ddf2bb546a6e1f09c1aa20ce, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1625766354192439505, guid: 132e4402ddf2bb546a6e1f09c1aa20ce, type: 3}
       propertyPath: _touchRadius
