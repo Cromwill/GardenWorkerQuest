@@ -11,44 +11,45 @@ public class LevelProgression : MonoBehaviour
     private IntegrationMetric _metric;
     private int _startTime;
     private string _firstLevelStart = "FirstLevelStart";
-    private int _currentLevel;
 
-    public event Action<int> LevelStarted;
     public event Action<int,int> LevelCompleted;
 
-    private void Awake()
+    private void OnEnable ()
     {
-        _levelList = FindObjectOfType<LevelsList>();
         _metric = FindObjectOfType<IntegrationMetric>();
-
-        _currentLevel = _levelList.CurrentLevelIndex +1;
+        _levelList = FindObjectOfType<LevelsList>();
 
         _firstLevelStart = $"{_firstLevelStart}{SceneManager.GetActiveScene().name}";
 
-
-        if (PlayerPrefs.HasKey(_firstLevelStart))
-            return;
-
-        _startTime = (int)Time.time;
-        PlayerPrefs.SetInt(_firstLevelStart, _startTime);
-        _metric.OnLevelStart(_currentLevel);
-    }
-
-    private void OnEnable()
-    {
         _levelList.LevelCompleted += OnLevelComplition;
+        _levelList.LevelStarted += OnLevelStart;
+
     }
 
     private void OnDisable()
     {
         _levelList.LevelCompleted -= OnLevelComplition;
+        _levelList.LevelStarted -= OnLevelStart;
     }
 
-    private void OnLevelComplition(int timeWhenCompleted)
+    private void OnLevelStart(int lvlIndex)
+    {
+        if (PlayerPrefs.HasKey(_firstLevelStart))
+            return;
+
+        _startTime = (int)Time.time;
+        PlayerPrefs.SetInt(_firstLevelStart, _startTime);
+
+        _metric.OnLevelStart(lvlIndex);
+    }
+
+    private void OnLevelComplition(int timeWhenCompleted, int lvlIndex)
     {
         int startTime = PlayerPrefs.GetInt(_firstLevelStart);
         int timeToComplete = Mathf.Abs(timeWhenCompleted - startTime);
 
-        LevelCompleted?.Invoke(timeToComplete, _currentLevel);
+        Debug.Log($"Current lvl: {lvlIndex}");
+
+        LevelCompleted?.Invoke(timeToComplete, lvlIndex);
     }
 }

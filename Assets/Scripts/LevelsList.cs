@@ -15,7 +15,8 @@ public class LevelsList : MonoBehaviour
 
     private string _levelKey = "level";
 
-    public event Action<int> LevelCompleted;
+    public event Action<int,int> LevelCompleted;
+    public event Action<int> LevelStarted;
 
     private void Awake()
     {
@@ -25,12 +26,16 @@ public class LevelsList : MonoBehaviour
             CurrentLevelIndex = PlayerPrefs.GetInt(_levelKey);
         else
             CurrentLevelIndex = _levelIndexForTests;
+
+        Invoke("StartLevel", 0.1f);
     }
 
     private void OnEnable()
     {
-        if(_levelComplition != null)
+        if (_levelComplition != null)
             _levelComplition.AllQuestsCompleted += OnAllQuestsComplition;
+
+        
     }
 
     private void OnDisable()
@@ -41,12 +46,13 @@ public class LevelsList : MonoBehaviour
 
     public void LoadCurrentLevel()
     {
-        Debug.Log(CurrentLevelIndex);
         _gardenLevels[CurrentLevelIndex].LoadSceneAsync();
     }
 
-    public void LoadRandomLevel()
+    public void StartLevel()
     {
+        int lvlIndex = CurrentLevelIndex + 1;
+        LevelStarted?.Invoke(lvlIndex);
     }
     
     public void SetCurrentLevel(int index)
@@ -57,7 +63,9 @@ public class LevelsList : MonoBehaviour
     private void OnAllQuestsComplition()
     {
         int CompletedTime = (int)Time.time;
-        LevelCompleted?.Invoke(CompletedTime);
+
+        int lvlIndex = CurrentLevelIndex + 1;
+        LevelCompleted?.Invoke(CompletedTime, lvlIndex);
 
         if (CurrentLevelIndex < _gardenLevels.Length-1)
         {

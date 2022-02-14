@@ -17,7 +17,6 @@ public class IntegrationMetric : MonoBehaviour
 
         if (_levelProgression != null)
         {
-            _levelProgression.LevelStarted += OnLevelStart;
             _levelProgression.LevelCompleted += OnLevelComplete;
         }
     }
@@ -29,7 +28,6 @@ public class IntegrationMetric : MonoBehaviour
 
         if (_levelProgression != null)
         {
-            _levelProgression.LevelStarted -= OnLevelStart;
             _levelProgression.LevelCompleted -= OnLevelComplete;
         }
     }
@@ -43,10 +41,8 @@ public class IntegrationMetric : MonoBehaviour
 
     public void OnLevelStart(int levelIndex)
     {
-        Dictionary<string, object> level = new Dictionary<string, object>();
-        level.Add("level", levelIndex);
 
-        Amplitude.Instance.logEvent("level_start", level);
+        Amplitude.Instance.logEvent("level_start", CreateLevelProperty(levelIndex));
     }
 
     private void OnLevelComplete(int levelComplitioTime, int levelIndex)
@@ -56,10 +52,7 @@ public class IntegrationMetric : MonoBehaviour
 
         Amplitude.Instance.logEvent("level_complete", time_spent);
 
-        Dictionary<string, object> level = new Dictionary<string, object>();
-        level.Add("level", levelIndex);
-
-        Amplitude.Instance.logEvent("level_complete", level);
+        Amplitude.Instance.logEvent("level_complete", CreateLevelProperty(levelIndex));
     }
 
     private Dictionary<string, object> CreateLevelProperty(int levelIndex)
