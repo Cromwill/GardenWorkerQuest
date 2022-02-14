@@ -11,21 +11,28 @@ public class LevelsList : MonoBehaviour
     [SerializeField] private int _levelIndexForTests;
 
     public int CurrentLevelIndex { get; private set; }
+    public int VirtualIndex { get; private set; }
     public int LastLevelIndex { get; private set; }
 
     private string _levelKey = "level";
+    private string _virtualLevelKey = "virtualLevel";
 
     public event Action<int,int> LevelCompleted;
     public event Action<int> LevelStarted;
 
     private void Awake()
     {
+        VirtualIndex = 0;
+
         LastLevelIndex = _gardenLevels.Length;
 
         if (PlayerPrefs.HasKey(_levelKey))
             CurrentLevelIndex = PlayerPrefs.GetInt(_levelKey);
         else
             CurrentLevelIndex = _levelIndexForTests;
+
+        if (PlayerPrefs.HasKey(_virtualLevelKey))
+            VirtualIndex = PlayerPrefs.GetInt(_virtualLevelKey);
 
         Invoke("StartLevel", 0.1f);
     }
@@ -34,8 +41,6 @@ public class LevelsList : MonoBehaviour
     {
         if (_levelComplition != null)
             _levelComplition.AllQuestsCompleted += OnAllQuestsComplition;
-
-        
     }
 
     private void OnDisable()
@@ -51,8 +56,7 @@ public class LevelsList : MonoBehaviour
 
     public void StartLevel()
     {
-        int lvlIndex = CurrentLevelIndex + 1;
-        LevelStarted?.Invoke(lvlIndex);
+        LevelStarted?.Invoke(VirtualIndex);
     }
     
     public void SetCurrentLevel(int index)
@@ -64,8 +68,9 @@ public class LevelsList : MonoBehaviour
     {
         int CompletedTime = (int)Time.time;
 
-        int lvlIndex = CurrentLevelIndex + 1;
-        LevelCompleted?.Invoke(CompletedTime, lvlIndex);
+        VirtualIndex++;
+        LevelCompleted?.Invoke(CompletedTime, VirtualIndex);
+        PlayerPrefs.SetInt(_virtualLevelKey, VirtualIndex);
 
         if (CurrentLevelIndex < _gardenLevels.Length-1)
         {

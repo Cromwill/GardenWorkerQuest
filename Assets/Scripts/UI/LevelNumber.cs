@@ -11,10 +11,7 @@ public class LevelNumber : MonoBehaviour
     private void OnEnable()
     {
         _levelList = FindObjectOfType<LevelsList>();
-        int levelIndex = _levelList.CurrentLevelIndex;
-
-        if (levelIndex == 0)
-            levelIndex = _levelList.LastLevelIndex;
+        int levelIndex = _levelList.VirtualIndex;
 
         _text.text = $" Level {levelIndex} completed!";
 
