@@ -18,17 +18,22 @@ public class QuestArrowCreator : MonoBehaviour
 
         foreach (var quest in _questPoints)
         {
-            var arrow = Instantiate(_arrow);
-            var view = Instantiate(_arrowView);
-
-            view.transform.SetParent(_arrowCanvas.transform);
-            arrow.transform.SetParent(this.transform);
-            arrow.transform.localPosition = Vector3.zero;
-            arrow.transform.localScale = Vector3.one;
-            arrow.transform.rotation = new Quaternion(0, 0, 0, 0);
-
-            arrow.SetImage(view);
-            arrow.SetTarget(quest);
+            CreatePointingArrow(quest);
         }
+    }
+
+    public void CreatePointingArrow(QuestPoint quest)
+    {
+        var arrow = Instantiate(_arrow);
+        var view = Instantiate(_arrowView);
+
+        view.transform.SetParent(_arrowCanvas.transform);
+        arrow.transform.SetParent(this.transform);
+        arrow.transform.localPosition = Vector3.zero;
+        arrow.transform.localScale = Vector3.one;
+        arrow.transform.rotation = new Quaternion(0, 0, 0, 0);
+
+        arrow.SetImage(view);
+        arrow.SetTarget(quest);
     }
 }
