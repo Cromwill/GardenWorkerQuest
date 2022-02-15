@@ -6,22 +6,22 @@ using AppodealAds.Unity.Common;
 
 public class Advertisment : MonoBehaviour, IInterstitialAdListener
 {
-    private LevelProgression _levelProgression;
-    private const string _appKey = "8ef24947ac3c06b516bac0213565d5bf8ca71aa049e4e1a9";
+    //private LevelProgression _levelProgression;
+    //private const string _appKey = "8ef24947ac3c06b516bac0213565d5bf8ca71aa049e4e1a9";
 
     private void Awake()
     {
-        Appodeal.initialize(_appKey, Appodeal.INTERSTITIAL, true);
+        //Appodeal.initialize(_appKey, Appodeal.INTERSTITIAL, true);
     }
     private void OnEnable()
     {
-        _levelProgression = FindObjectOfType<LevelProgression>();
-        _levelProgression.LevelStarted += ShowInterstitial;
+        //_levelProgression = FindObjectOfType<LevelProgression>();
+        //_levelProgression.LevelStarted += ShowInterstitial;
     }
 
     private void OnDisable()
     {
-        _levelProgression.LevelStarted -= ShowInterstitial;
+        //_levelProgression.LevelStarted -= ShowInterstitial;
     }
 
     public void onInterstitialClicked()
@@ -61,7 +61,7 @@ public class Advertisment : MonoBehaviour, IInterstitialAdListener
 
     private void ShowInterstitial()
     {
-        if (Appodeal.canShow(Appodeal.INTERSTITIAL))
-            Appodeal.show(Appodeal.INTERSTITIAL);
+        //if (Appodeal.canShow(Appodeal.INTERSTITIAL))
+        //    Appodeal.show(Appodeal.INTERSTITIAL);
     }
 }
