@@ -245,6 +245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exclamation point (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: Name
       value: "\u0423\u0431\u0438\u0440\u0430\u0435\u043C \u043C\u0443\u0441\u043E\u0440"
@@ -478,6 +482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exclamation point (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: Name
       value: "\u0414\u0435\u043B\u0430\u0435\u043C \u0441\u043A\u0443\u043B\u044C\u043F\u0442\u0443\u0440\u043A\u0438"
@@ -546,6 +554,10 @@ PrefabInstance:
     - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: m_Name
       value: Exclamation point (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: Name
@@ -1298,6 +1310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exclamation point (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: Name
       value: "\u0423\u0431\u0438\u0440\u0430\u0435\u043C \u043F\u0430\u043B\u043A\u0438"
@@ -1377,6 +1393,10 @@ PrefabInstance:
     - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: m_Name
       value: Exclamation point (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: Name
@@ -1558,6 +1578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exclamation point (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: Name
       value: "\u041F\u043E\u043B\u0438\u0432\u0430\u0435\u043C \u0446\u0432\u0435\u0442\u044B"
@@ -1626,6 +1650,10 @@ PrefabInstance:
     - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: m_Name
       value: Exclamation point (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: Name
@@ -1948,6 +1976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exclamation point (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: Name
       value: "\u041C\u043E\u0435\u043C \u043E\u043A\u043D\u0430"
@@ -2017,6 +2049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exclamation point (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: Name
       value: "\u0427\u0438\u0441\u0442\u0438\u043C \u0441\u043D\u0435\u0433"
@@ -2085,6 +2121,10 @@ PrefabInstance:
     - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: m_Name
       value: Exclamation point (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: Name
@@ -2363,6 +2403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exclamation point (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: Name
       value: "\u0421\u0442\u0440\u0438\u0436\u0435\u043C \u043A\u0443\u0441\u0442\u044B"
@@ -2529,6 +2573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exclamation point (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: Name
       value: "\u0421\u0434\u0443\u0432\u0430\u0435\u043C \u043B\u0438\u0441\u0442\u0438\u043A\u0438"
@@ -2597,6 +2645,10 @@ PrefabInstance:
     - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: m_Name
       value: Exclamation point (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8791183775792752755, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: Name
@@ -3428,6 +3480,10 @@ PrefabInstance:
     - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: m_Name
       value: Exclamation point
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557374484871042340, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9046102646897414046, guid: 4917b35c304e99d42a999851f57dc3dc, type: 3}
       propertyPath: m_RootOrder

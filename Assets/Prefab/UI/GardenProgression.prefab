@@ -585,6 +585,7 @@ GameObject:
   - component: {fileID: 8587194778195881241}
   - component: {fileID: 5662762442266927108}
   - component: {fileID: 781813736259644669}
+  - component: {fileID: 743569245}
   m_Layer: 5
   m_Name: GardenProgression
   m_TagString: Untagged
@@ -723,6 +724,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84221cce254fb2f48b304235610094a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &743569245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794269252353364781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f7b7f321385dc4dac865e7877cc1e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _arrow: {fileID: 8951604904524046399, guid: 4fa2378eb74167444b51fccfa6506b8a, type: 3}
+  _arrowView: {fileID: 4018708878198641880, guid: fdafb7c39bc8fd04382b95f3f0e887ee, type: 3}
 --- !u!1 &1794269252378667007
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,7 +755,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1794269252378667006
 RectTransform:
   m_ObjectHideFlags: 0

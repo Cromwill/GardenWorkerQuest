@@ -7,13 +7,14 @@ public class QuestTrigger : MonoBehaviour
 {
     [SerializeField] private float yOffset;
     [SerializeField] private Slider _slider;
-    [SerializeField] private float _changeSpeed;
 
+    private float _changeSpeed;
     private Player _player;
     private IQuestLoader _questEnter;
     private Coroutine _coroutine;
     private void Start()
     {
+        _changeSpeed = 1.3f;
         _player = FindObjectOfType<Player>();
     }
     private void Update()
