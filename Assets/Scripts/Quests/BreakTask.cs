@@ -5,11 +5,12 @@ using UnityEngine;
 public class BreakTask : Task
 {
     [SerializeField] private Breakable[] _breakables;
-    
+    [SerializeField] private int _permississaleDeviation;
+
     private void Awake()
     {
         _breakables = FindObjectsOfType<Breakable>();
-        MaxValue = _breakables.Length;
+        MaxValue = _breakables.Length - _permississaleDeviation;
     }
 
     private void OnEnable()
