@@ -369,7 +369,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3851690096367577262, guid: 33638739165bf7944869ef3094d58b31, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3851690096367577262, guid: 33638739165bf7944869ef3094d58b31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1334,7 +1334,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 45, y: -90, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -1770,7 +1770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6736800873468056119, guid: a21d7bdb8482b17478441d0fa10fb5db, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6736800873468056119, guid: a21d7bdb8482b17478441d0fa10fb5db, type: 3}
       propertyPath: m_LocalScale.x

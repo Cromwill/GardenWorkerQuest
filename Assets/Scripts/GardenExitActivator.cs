@@ -5,17 +5,19 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class GardenExitActivator : MonoBehaviour
 {
-    [SerializeField] private GameObject _exitView;
+    [SerializeField] private QuestPoint _questPoint;
 
     private LevelComplition _levelComplition;
     private Collider _collider;
+    private QuestArrowCreator _arrowCreator;
 
     private void Awake()
     {
         _collider = GetComponent<Collider>();
         _levelComplition = FindObjectOfType<LevelComplition>();
+        _arrowCreator = FindObjectOfType<QuestArrowCreator>();
         _collider.enabled = false;
-        _exitView.SetActive(false);
+        _questPoint.gameObject.SetActive(false);
     }
 
     private void OnEnable()
@@ -31,6 +33,7 @@ public class GardenExitActivator : MonoBehaviour
     private void OnAllQuestsComplited()
     {
         _collider.enabled = true;
-        _exitView.SetActive(true);
+        _questPoint.gameObject.SetActive(true);
+        _arrowCreator.CreatePointingArrow(_questPoint);
     }
 }

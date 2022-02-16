@@ -11,7 +11,7 @@ public class QuestArrowCreator : MonoBehaviour
     private QuestPoint[] _questPoints;
     private ArrowCanvas _arrowCanvas;
 
-    private void Start()
+    private void Awake()
     {
         _arrowCanvas = FindObjectOfType<ArrowCanvas>();
         _questPoints = FindObjectsOfType<QuestPoint>();
