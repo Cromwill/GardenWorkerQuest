@@ -9,13 +9,13 @@
             url "https://artifactory.appodeal.com/artifactory/appodeal" // Assets/Appodeal/Editor/NetworkConfigs/AdColonyDependencies.xml:12, Assets/Appodeal/Editor/NetworkConfigs/AppLovinDependencies.xml:11, Assets/Appodeal/Editor/NetworkConfigs/AppodealDependencies.xml:15, Assets/Appodeal/Editor/NetworkConfigs/BidMachineDependencies.xml:13, Assets/Appodeal/Editor/NetworkConfigs/FacebookAudienceDependencies.xml:12, Assets/Appodeal/Editor/NetworkConfigs/GoogleAdMobDependencies.xml:12, Assets/Appodeal/Editor/NetworkConfigs/IronSourceDependencies.xml:12, Assets/Appodeal/Editor/NetworkConfigs/MyTargetDependencies.xml:12, Assets/Appodeal/Editor/NetworkConfigs/OguryDependencies.xml:10, Assets/Appodeal/Editor/NetworkConfigs/UnityDependencies.xml:10, Assets/Appodeal/Editor/NetworkConfigs/VungleDependencies.xml:13, Assets/Appodeal/Editor/NetworkConfigs/YandexDependencies.xml:11
         }
         maven {
-            url "https://repo.maven.apache.org/maven2" // Packages/com.amplitude.unityplugin/Editor/AmplitudeDependencies.xml:5
+            url "https://repo.maven.apache.org/maven2" // Assets/Editor/AmplitudeDependencies.xml:5
         }
         maven {
             url "https://artifactory.appodeal.com/appodeal" // Assets/Appodeal/Editor/ConsentManagerDependencies/ConsentMangerDependencies.xml:7
         }
         maven {
-            url "https://maven.google.com" // Packages/com.amplitude.unityplugin/Editor/AmplitudeDependencies.xml:11, Packages/com.amplitude.unityplugin/Editor/AmplitudeDependencies.xml:17
+            url "https://maven.google.com" // Assets/Editor/AmplitudeDependencies.xml:11, Assets/Editor/AmplitudeDependencies.xml:17
         }
         mavenLocal()
         mavenCentral()
@@ -31,7 +31,7 @@ dependencies {
     implementation 'androidx.core:core:1.2.0' // Assets/Appodeal/Editor/NetworkConfigs/VungleDependencies.xml:6
     implementation 'co.ogury:ogury-sdk:5.1.0' // Assets/Appodeal/Editor/NetworkConfigs/OguryDependencies.xml:6
     implementation 'com.adcolony:sdk:4.6.5' // Assets/Appodeal/Editor/NetworkConfigs/AdColonyDependencies.xml:6
-    implementation 'com.amplitude:android-sdk:2.34.1' // Packages/com.amplitude.unityplugin/Editor/AmplitudeDependencies.xml:11
+    implementation 'com.amplitude:android-sdk:2.34.1' // Assets/Editor/AmplitudeDependencies.xml:11
     implementation 'com.android.support:appcompat-v7:25.3.1' // Facebook.Unity.Editor.AndroidSupportLibraryResolver.addSupportLibraryDependency
     implementation 'com.android.support:cardview-v7:25.3.1' // Facebook.Unity.Editor.AndroidSupportLibraryResolver.addSupportLibraryDependency
     implementation 'com.android.support:customtabs:25.3.1' // Facebook.Unity.Editor.AndroidSupportLibraryResolver.addSupportLibraryDependency
@@ -74,7 +74,7 @@ dependencies {
     implementation 'com.ironsource.sdk:mediationsdk:7.1.14' // Assets/Appodeal/Editor/NetworkConfigs/IronSourceDependencies.xml:8
     implementation 'com.my.target:mytarget-sdk:5.15.0' // Assets/Appodeal/Editor/NetworkConfigs/MyTargetDependencies.xml:8
     implementation 'com.parse.bolts:bolts-android:1.4.0' // Assets/FacebookSDK/Plugins/Editor/Dependencies.xml:4
-    implementation 'com.squareup.okhttp3:okhttp:4.2.2' // Packages/com.amplitude.unityplugin/Editor/AmplitudeDependencies.xml:17
+    implementation 'com.squareup.okhttp3:okhttp:4.2.2' // Assets/Editor/AmplitudeDependencies.xml:17
     implementation 'com.unity3d.ads:unity-ads:4.0.0' // Assets/Appodeal/Editor/NetworkConfigs/UnityDependencies.xml:6
     implementation 'com.vungle:publisher-sdk-android:6.10.4' // Assets/Appodeal/Editor/NetworkConfigs/VungleDependencies.xml:10
     implementation 'com.yandex.android:mobileads:4.5.0' // Assets/Appodeal/Editor/NetworkConfigs/YandexDependencies.xml:7
