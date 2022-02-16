@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,13 +10,12 @@ public class GardenExitActivator : MonoBehaviour
 
     private LevelComplition _levelComplition;
     private Collider _collider;
-    private QuestArrowCreator _arrowCreator;
 
+    public event Action<QuestPoint> ExitActivated;
     private void Awake()
     {
         _collider = GetComponent<Collider>();
         _levelComplition = FindObjectOfType<LevelComplition>();
-        _arrowCreator = FindObjectOfType<QuestArrowCreator>();
         _collider.enabled = false;
         _questPoint.gameObject.SetActive(false);
     }
@@ -34,6 +34,7 @@ public class GardenExitActivator : MonoBehaviour
     {
         _collider.enabled = true;
         _questPoint.gameObject.SetActive(true);
-        _arrowCreator.CreatePointingArrow(_questPoint);
+
+        ExitActivated?.Invoke(_questPoint);
     }
 }

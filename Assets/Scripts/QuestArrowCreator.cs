@@ -10,8 +10,9 @@ public class QuestArrowCreator : MonoBehaviour
 
     private QuestPoint[] _questPoints;
     private ArrowCanvas _arrowCanvas;
+    private GardenExitActivator _exitActivator;
 
-    private void Awake()
+    private void Start()
     {
         _arrowCanvas = FindObjectOfType<ArrowCanvas>();
         _questPoints = FindObjectsOfType<QuestPoint>();
@@ -20,6 +21,17 @@ public class QuestArrowCreator : MonoBehaviour
         {
             CreatePointingArrow(quest);
         }
+    }
+
+    private void OnEnable()
+    {
+        _exitActivator = FindObjectOfType<GardenExitActivator>();
+        _exitActivator.ExitActivated += CreatePointingArrow;
+    }
+
+    private void OnDisable()
+    {
+        _exitActivator.ExitActivated -= CreatePointingArrow;
     }
 
     public void CreatePointingArrow(QuestPoint quest)
