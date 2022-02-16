@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45107597, g: 0.49959683, b: 0.56714296, a: 1}
+  m_IndirectSpecularColor: {r: 0.44809747, g: 0.49736512, b: 0.57219654, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -209,14 +209,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132186452}
-  m_LocalRotation: {x: -0.2330901, y: 0.5429168, z: -0.03723397, w: -0.80593055}
+  m_LocalRotation: {x: -0.2473573, y: 0.44191268, z: -0.18484756, w: -0.84223443}
   m_LocalPosition: {x: 1.29, y: 6.07, z: -2.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 24.591, y: 289.386, z: -12.26}
+  m_LocalEulerAnglesHint: {x: 35.453, y: 306.721, z: 6.538}
 --- !u!1 &460077891
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +388,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8025421168012766916, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f233854208ab30946b09510bb80d0709, type: 2}
     - target: {fileID: 8179150225918517272, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -396,6 +400,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 62e25ef75a2216f418d06453c9ad15cb, type: 2}
+    - target: {fileID: 8411222873779583992, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f233854208ab30946b09510bb80d0709, type: 2}
     - target: {fileID: 8553840203665236831, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
       propertyPath: m_IsActive
       value: 0

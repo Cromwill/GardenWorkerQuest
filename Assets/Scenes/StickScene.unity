@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 808013075}
-  m_IndirectSpecularColor: {r: 0.45090318, g: 0.49921477, b: 0.56603765, a: 1}
+  m_IndirectSpecularColor: {r: 0.40966114, g: 0.43446854, b: 0.4458382, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -618,14 +618,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808013074}
-  m_LocalRotation: {x: 0.495557, y: -0.812085, z: 0.06445554, w: 0.3013085}
+  m_LocalRotation: {x: 0.30856448, y: -0.108051054, z: 0.9228216, w: -0.20374803}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 23.786, y: -152.29, z: -56.839}
+  m_LocalEulerAnglesHint: {x: 4.226, y: -322.033, z: -153.645}
 --- !u!1001 &834346987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1179,6 +1179,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.45
       objectReference: {fileID: 0}
+    - target: {fileID: 1192692723830504518, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aa70defba93c48f49b2f25f8fa3fd1af, type: 2}
     - target: {fileID: 1192692723832685954, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -1191,6 +1195,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1192692724421950353, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aa70defba93c48f49b2f25f8fa3fd1af, type: 2}
     - target: {fileID: 1192692724424065621, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -1203,10 +1211,18 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1192692724548324812, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aa70defba93c48f49b2f25f8fa3fd1af, type: 2}
     - target: {fileID: 1192692724812012641, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1192692724814144933, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aa70defba93c48f49b2f25f8fa3fd1af, type: 2}
     - target: {fileID: 1192692725158737344, guid: 44a586caac55985409f54ead8d9f6ff6, type: 3}
       propertyPath: m_Layer
       value: 6

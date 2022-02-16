@@ -478,6 +478,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8089259614111062460, guid: f270d0d7706eb75408fc25f44c2dce71, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64ebe495f940acb45954a5ca6a73121f, type: 2}
     - target: {fileID: 8089259614113218154, guid: f270d0d7706eb75408fc25f44c2dce71, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Soda_03 (3)
@@ -1169,6 +1173,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8089259614111062460, guid: f270d0d7706eb75408fc25f44c2dce71, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64ebe495f940acb45954a5ca6a73121f, type: 2}
     - target: {fileID: 8089259614113218154, guid: f270d0d7706eb75408fc25f44c2dce71, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Soda_03 (4)
@@ -1760,6 +1768,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5235274910902169943, guid: 4ed6c76d83257754ea06fa74ff3eca4d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64ebe495f940acb45954a5ca6a73121f, type: 2}
     - target: {fileID: 5235274910904027963, guid: 4ed6c76d83257754ea06fa74ff3eca4d, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1834,6 +1846,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8193052106775393784, guid: df27c753c85f95c4ca0abb23b9ba7535, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64ebe495f940acb45954a5ca6a73121f, type: 2}
     - target: {fileID: 8193052106777189046, guid: df27c753c85f95c4ca0abb23b9ba7535, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1908,6 +1924,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8089259614111062460, guid: f270d0d7706eb75408fc25f44c2dce71, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64ebe495f940acb45954a5ca6a73121f, type: 2}
     - target: {fileID: 8089259614113218154, guid: f270d0d7706eb75408fc25f44c2dce71, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Soda_03 (1)
@@ -2080,6 +2100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrashCan
       objectReference: {fileID: 0}
+    - target: {fileID: 2876299188410517026, guid: d7ee26ac5f490c54c9d7450ec65f619e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64ebe495f940acb45954a5ca6a73121f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7ee26ac5f490c54c9d7450ec65f619e, type: 3}
 --- !u!1001 &3295309848003955013
@@ -2089,6 +2113,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2728266600154569418, guid: f1ac3c041f72c244ab4de45848b6b9b0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64ebe495f940acb45954a5ca6a73121f, type: 2}
     - target: {fileID: 2728266600156438584, guid: f1ac3c041f72c244ab4de45848b6b9b0, type: 3}
       propertyPath: m_Name
       value: SM_Prop_LargeSign_Noodles_01
@@ -2223,6 +2251,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 672071815474050774, guid: dd76d87065300fc4691af349a2df4fc0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64ebe495f940acb45954a5ca6a73121f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd76d87065300fc4691af349a2df4fc0, type: 3}
 --- !u!1 &3437697669967817391 stripped
@@ -2564,6 +2596,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2763693088014614021, guid: aa68983465f987a479dd652af8c1160b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64ebe495f940acb45954a5ca6a73121f, type: 2}
     - target: {fileID: 2763693088016784035, guid: aa68983465f987a479dd652af8c1160b, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Soda_02
@@ -2638,6 +2674,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3295306110618125256, guid: 56531e5c6c0552d45922cf7c0291837f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 64ebe495f940acb45954a5ca6a73121f, type: 2}
     - target: {fileID: 3295306110620152086, guid: 56531e5c6c0552d45922cf7c0291837f, type: 3}
       propertyPath: m_Name
       value: SM_Prop_LargeSign_Pizza_01

@@ -8,30 +8,11 @@ public class QuestArrowCreator : MonoBehaviour
     [SerializeField] private PointingArrow _arrow;
     [SerializeField] private Image _arrowView;
 
-    private QuestPoint[] _questPoints;
     private ArrowCanvas _arrowCanvas;
-    private GardenExitActivator _exitActivator;
 
-    private void Start()
+    private void Awake()
     {
         _arrowCanvas = FindObjectOfType<ArrowCanvas>();
-        _questPoints = FindObjectsOfType<QuestPoint>();
-
-        foreach (var quest in _questPoints)
-        {
-            CreatePointingArrow(quest);
-        }
-    }
-
-    private void OnEnable()
-    {
-        _exitActivator = FindObjectOfType<GardenExitActivator>();
-        _exitActivator.ExitActivated += CreatePointingArrow;
-    }
-
-    private void OnDisable()
-    {
-        _exitActivator.ExitActivated -= CreatePointingArrow;
     }
 
     public void CreatePointingArrow(QuestPoint quest)
@@ -42,7 +23,7 @@ public class QuestArrowCreator : MonoBehaviour
         view.transform.SetParent(_arrowCanvas.transform);
         arrow.transform.SetParent(this.transform);
         arrow.transform.localPosition = Vector3.zero;
-        arrow.transform.localScale = Vector3.one;
+        view.transform.localScale = Vector3.one;
         arrow.transform.rotation = new Quaternion(0, 0, 0, 0);
 
         arrow.SetImage(view);
