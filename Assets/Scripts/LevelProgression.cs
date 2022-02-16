@@ -24,7 +24,6 @@ public class LevelProgression : MonoBehaviour
 
         _levelList.LevelCompleted += OnLevelComplition;
         _levelList.LevelStarted += OnLevelStart;
-
     }
 
     private void OnDisable()
@@ -49,8 +48,6 @@ public class LevelProgression : MonoBehaviour
     {
         int startTime = PlayerPrefs.GetInt(_firstLevelStart);
         int timeToComplete = Mathf.Abs(timeWhenCompleted - startTime);
-
-        Debug.Log($"Current lvl: {lvlIndex}");
 
         LevelCompleted?.Invoke(timeToComplete, lvlIndex);
     }

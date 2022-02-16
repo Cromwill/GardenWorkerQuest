@@ -3418,6 +3418,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1794269251421307997, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1794269252353364781, guid: 219256382d9e83548945e02c68d9a3ba, type: 3}
       propertyPath: m_Name
       value: GardenProgression
