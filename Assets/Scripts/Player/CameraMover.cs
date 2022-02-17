@@ -30,7 +30,7 @@ public class CameraMover : MonoBehaviour
     }
     private void OnValidate()
     {
-        transform.position = _player.transform.position + _offset;
+
     }
 
     private void Update()

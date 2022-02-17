@@ -6,19 +6,27 @@ using UnityEngine;
 public class RaycastHandler : MonoBehaviour
 {
     [SerializeField] private InputActionAdapter _inputHandler;
+    [SerializeField] private HandPointer _hand;
 
     public event Action<Vector3> TouchedInteractable;
     public event Action<Vector3> HoldedOnInteractable;
 
     private void OnEnable()
     {
-        _inputHandler.Touched += OnTouch;
+        //_inputHandler.Touched += OnTouch;
+        _hand = FindObjectOfType<HandPointer>();
+
+        if(_hand!= null)
+            _hand.MouseDown += OnTouch;
+
         _inputHandler.Holded += OnHold;
     }
 
     private void OnDisable()
     {
-        _inputHandler.Touched -= OnTouch;
+        //_inputHandler.Touched -= OnTouch;
+        if (_hand != null)
+            _hand.MouseDown -= OnTouch;
         _inputHandler.Holded -= OnHold;
     }
 
