@@ -1,7 +1,6 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="ActivatorMover" preserve="all" />
-    <type fullname="Advertisment" preserve="all" />
     <type fullname="ArrowCanvas" preserve="all" />
     <type fullname="BackToGarden" preserve="all" />
     <type fullname="Breakable" preserve="all" />
