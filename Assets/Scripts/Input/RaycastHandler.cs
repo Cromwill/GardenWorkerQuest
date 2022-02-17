@@ -48,7 +48,7 @@ public class RaycastHandler : MonoBehaviour
         if (interactable != null)
         {
             interactable.Interact();
-            TouchedInteractable?.Invoke(interactable.transform.position);
+            TouchedInteractable?.Invoke(hitInfo.point);
         }
     }
 
