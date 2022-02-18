@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
 
-public class QuestEnter : Interactable
+public class QuestEnter : Interactable, IQuestLoader
 {
     [SerializeField] private AssetReference _scene;
 
@@ -16,7 +16,7 @@ public class QuestEnter : Interactable
         _sceneLoader = FindObjectOfType<SceneLoader>();
     }
 
-    public override void OnInteract()
+    public void LoadQuestScene()
     {
         _sceneLoader.Load(_scene);
     }

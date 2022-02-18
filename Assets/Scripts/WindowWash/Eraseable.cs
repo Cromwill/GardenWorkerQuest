@@ -92,13 +92,31 @@ public class Eraseable : MonoBehaviour
     private void CheckCompletition()
     {
         Color32[] colors = _texture.GetPixels32();
-        
+        int counter = 0;
+
         for (int i = 0; i < colors.Length; i++)
         {
             if (colors[i].a != 0)
+                counter++;
+
+            if(counter>2000)
                 return;
         }
 
         Completed?.Invoke();
+        EraseAll();
+    }
+
+    private void EraseAll()
+    {
+        Color32[] colors = _texture.GetPixels32();
+
+        for (int i = 0; i < colors.Length; i++)
+        {
+            colors[i].a = 0;
+        }
+
+        _texture.SetPixels32(colors);
+        _texture.Apply(false);
     }
 }

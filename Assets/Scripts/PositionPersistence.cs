@@ -4,51 +4,65 @@ using UnityEngine;
 
 public class PositionPersistence : MonoBehaviour
 {
-    [SerializeField] private Player _player;
-
-    [SerializeField] private Vector3 _positionBeforeLoading;
     [SerializeField] private SceneLoader _sceneLoader;
 
-    private string xPosition = "xPosition";
-    private string yPosition = "yPosition";
-    private string zPosition = "zPosition";
+    public Vector3 DefaultPosition = new Vector3(-56f, 0, -6.6f);
+    private Player _player;
+    private LevelComplition _levelComplition;
+    private string _xPosition = "xPos";
+    private string _yPosition = "yPos";
+    private string _zPosition = "zPos";
 
     private void Start()
     {
-        if (HasSavedPosition())
-            _positionBeforeLoading = LoadPosition();
-
-        _player.transform.position = _positionBeforeLoading;
+        _player = FindObjectOfType<Player>();
     }
 
     private void OnEnable()
     {
+        _levelComplition = FindObjectOfType<LevelComplition>();
+        _levelComplition.AllQuestsCompleted += DeleteSavedPosition;
         _sceneLoader.LoadingScene += Save;
     }
 
     private void OnDisable()
     {
         _sceneLoader.LoadingScene -= Save;
+        _levelComplition.AllQuestsCompleted -= DeleteSavedPosition;
+    }
+
+    private void DeleteSavedPosition()
+    {
+        PlayerPrefs.DeleteKey(_xPosition);
+        PlayerPrefs.DeleteKey(_yPosition);
+        PlayerPrefs.DeleteKey(_zPosition);
     }
 
     private void Save()
     {
-        PlayerPrefs.SetFloat(xPosition, _player.transform.position.x);
-        PlayerPrefs.SetFloat(yPosition, _player.transform.position.y);
-        PlayerPrefs.SetFloat(zPosition, _player.transform.position.z);
+        PlayerPrefs.SetFloat(_xPosition, _player.transform.position.x);
+        PlayerPrefs.SetFloat(_yPosition, _player.transform.position.y);
+        PlayerPrefs.SetFloat(_zPosition, _player.transform.position.z);
     }
 
-    private Vector3 LoadPosition()
+    public Vector3 LoadPosition()
     {
-        float xPosition = PlayerPrefs.GetFloat(this.xPosition, _player.transform.position.x);
-        float yPosition = PlayerPrefs.GetFloat(this.yPosition, _player.transform.position.y);
-        float zPosition = PlayerPrefs.GetFloat(this.zPosition, _player.transform.position.z);
+        if (HasSavedPosition())
+        {
+            float xPosition = PlayerPrefs.GetFloat(_xPosition);
+            float yPosition = PlayerPrefs.GetFloat(_yPosition);
+            float zPosition = PlayerPrefs.GetFloat(_zPosition);
 
-        return new Vector3(xPosition, yPosition, zPosition);
+            return new Vector3(xPosition, yPosition, zPosition);
+        }
+        else
+        {
+            return DefaultPosition;
+        }
     }
 
-    private bool HasSavedPosition()
+    public bool HasSavedPosition()
     {
-        return PlayerPrefs.HasKey(xPosition);
+        return PlayerPrefs.HasKey(_xPosition);
     }
 }

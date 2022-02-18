@@ -9,7 +9,9 @@ public class Conveyor : MonoBehaviour
     [SerializeField] private bool _workAlways;
     [SerializeField] private bool _reverseMoving;
 
+    public bool HitedConstrain;
     private Rigidbody _rigidbody;
+    private float _minTime = 0.5f;
 
     private void Start()
     {
@@ -21,9 +23,9 @@ public class Conveyor : MonoBehaviour
         Vector3 calculatedPosition = _rigidbody.position;
 
         if (_reverseMoving)
-            _rigidbody.position -= transform.right * CalculatedSpeed();
+            _rigidbody.position -= transform.forward * CalculatedSpeed();
         else
-            _rigidbody.position += transform.right * CalculatedSpeed();
+            _rigidbody.position += transform.forward * CalculatedSpeed();
 
         _rigidbody.MovePosition(calculatedPosition);
     }
@@ -35,7 +37,30 @@ public class Conveyor : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(Input.GetMouseButton(0) || _workAlways)
-            Move();
+        if(Input.GetMouseButton(0) || _workAlways )
+        {
+            StartCoroutine(MoveCoroutine());
+        }
+    }
+
+    private IEnumerator MoveCoroutine()
+    {
+        float timePassed = 0;
+
+        while (timePassed < _minTime && HitedConstrain == false)
+        {
+            Vector3 calculatedPosition = _rigidbody.position;
+
+            timePassed += Time.deltaTime;
+
+            if (_reverseMoving)
+                _rigidbody.position -= transform.forward * CalculatedSpeed();
+            else
+                _rigidbody.position += transform.forward * CalculatedSpeed();
+
+            _rigidbody.MovePosition(calculatedPosition);
+
+            yield return null;
+        }
     }
 }

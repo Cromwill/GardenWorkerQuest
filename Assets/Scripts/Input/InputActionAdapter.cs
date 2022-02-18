@@ -43,7 +43,10 @@ public class InputActionAdapter : MonoBehaviour
         {
             OnHold();
         }
+    }
 
+    private void FixedUpdate()
+    {
         if (_input.Player.Move.inProgress)
             OnMove();
     }

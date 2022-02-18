@@ -13,10 +13,10 @@ public class NamePresenter : MonoBehaviour
 
     private void Start()
     {
-        _quest = GetComponent<QuestEnter>();
-        _text = GetComponentInChildren<TMP_Text>();
-        _canvas = GetComponentInChildren<Canvas>();
-        _canvas.worldCamera = Camera.main;
-        _text.text = _quest.Name;
+        //_quest = GetComponent<QuestEnter>();
+        //_text = GetComponentInChildren<TMP_Text>();
+        //_canvas = GetComponentInChildren<Canvas>();
+        //_canvas.worldCamera = Camera.main;
+        //_text.text = _quest.Name;
     }
 }

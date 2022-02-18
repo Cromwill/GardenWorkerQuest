@@ -6,9 +6,14 @@ using UnityEngine;
 public class PlayerMover : MonoBehaviour
 {  
     [SerializeField] private InputActionAdapter _handler;
-    
-    private float _speed = 10;
+    [SerializeField] private float _speed;
 
+    private Rigidbody _rigidBody;
+
+    private void Start()
+    {
+        _rigidBody = GetComponent<Rigidbody>();
+    }
     private void OnEnable()
     {
         _handler.MoveCalled += Move;
@@ -21,9 +26,10 @@ public class PlayerMover : MonoBehaviour
 
     private void Move(Vector3 StickDirection)
     {
-        Vector3 direction = new Vector3(StickDirection.x, 0, StickDirection.y);
+        Vector3 direction = new Vector3(-StickDirection.y, 0, StickDirection.x);
 
-        transform.Translate(direction * _speed * Time.deltaTime, Space.World);
+        _rigidBody.MovePosition(transform.position + direction * _speed * Time.deltaTime);
+
         Rotate(direction);
     }
 
