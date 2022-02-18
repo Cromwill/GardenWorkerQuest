@@ -1521,6 +1521,10 @@ PrefabInstance:
       propertyPath: _point
       value: 
       objectReference: {fileID: 461909448}
+    - target: {fileID: 2198032516830547570, guid: 470b18e00d73529469218f0bc65d2a64, type: 3}
+      propertyPath: _particle
+      value: 
+      objectReference: {fileID: 4282206273099685569, guid: 5a61aa2feb243a44cb5111ea15a76e74, type: 3}
     - target: {fileID: 2198032516830547571, guid: 470b18e00d73529469218f0bc65d2a64, type: 3}
       propertyPath: m_RootOrder
       value: 22
