@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44658005, g: 0.49641478, b: 0.5748176, a: 1}
+  m_IndirectSpecularColor: {r: 0.44402245, g: 0.49316746, b: 0.57223237, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3684,6 +3684,10 @@ PrefabInstance:
     - target: {fileID: 8585994626204879691, guid: 2dc4660225e9e484f91c69e8f66fb644, type: 3}
       propertyPath: m_Name
       value: QuestTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585994626204879698, guid: 2dc4660225e9e484f91c69e8f66fb644, type: 3}
+      propertyPath: _changeSpeed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8585994626204879703, guid: 2dc4660225e9e484f91c69e8f66fb644, type: 3}
       propertyPath: m_Camera
